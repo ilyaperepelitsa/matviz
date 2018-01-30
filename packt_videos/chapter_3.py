@@ -34,3 +34,7 @@ def explode(df, lst_cols, fill_value=''):
         }).assign(**{col:np.concatenate(df[col].values) for col in lst_cols}) \
           .append(df.loc[lens==0, idx_cols]).fillna(fill_value) \
           .loc[:, df.columns]
+
+total_exploded = explode(total_set, ["street_for_each_step", "distance_per_step", "travel_time_per_step"
+                   , "step_maneuvers", "step_direction", "step_location_list"])
+total_exploded.shape
