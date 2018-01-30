@@ -39,3 +39,8 @@ def explode(df, lst_cols, fill_value=''):
 total_exploded = explode(total_set, ["street_for_each_step", "distance_per_step", "travel_time_per_step"
                    , "step_maneuvers", "step_direction", "step_location_list"])
 total_exploded.shape
+
+latlon = pd.DataFrame(total_exploded.step_location_list.str.split(',',1).tolist(),
+                                   columns = ['lon','lat'])
+total_exploded = pd.concat([total_exploded, latlon], axis=1, join='inner')
+total_exploded.shape
