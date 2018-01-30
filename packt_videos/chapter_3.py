@@ -10,7 +10,7 @@ first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
 total_set = pd.concat([first_set, second_set])
 
-total_set.
+total_set.head()
 def explode(df, lst_cols, fill_value=''):
     # make sure `lst_cols` is a list
     if lst_cols and not isinstance(lst_cols, list):
