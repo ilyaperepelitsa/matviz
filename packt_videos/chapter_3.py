@@ -10,3 +10,4 @@ from matplotlib.figure import Figure
 
 first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
+total_set = pd.concat([first_set, second_set])
