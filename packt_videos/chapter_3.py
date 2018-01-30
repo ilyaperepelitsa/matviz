@@ -15,4 +15,4 @@ total_set = pd.concat([first_set, second_set])
 
 for col in ["street_for_each_step", "distance_per_step", "travel_time_per_step",
                 "step_maneuvers", "step_direction", "step_location_list"]:
-    data_play.loc[:,col] = data_play.loc[:,col].str.split('|').tolist()
+    total_set.loc[:,col] = total_set.loc[:,col].str.split('|').tolist()
