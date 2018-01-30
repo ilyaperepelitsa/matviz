@@ -46,4 +46,6 @@ def explode(df, lst_cols, fill_value=''):
 
 latlon = pd.DataFrame(total_exploded.step_location_list.str.split(',',1).tolist(),
                                    columns = ['lon','lat'])
+
+                                   
 total_exploded = pd.concat([total_exploded, latlon], axis=1, join='inner')
