@@ -43,3 +43,7 @@ def explode(df, lst_cols, fill_value=''):
         }).assign(**{col:np.concatenate(df[col].values) for col in lst_cols}) \
           .append(df.loc[lens==0, idx_cols]).fillna(fill_value) \
           .loc[:, df.columns]
+
+latlon = pd.DataFrame(total_exploded.step_location_list.str.split(',',1).tolist(),
+                                   columns = ['lon','lat'])
+total_exploded = pd.concat([total_exploded, latlon], axis=1, join='inner')
