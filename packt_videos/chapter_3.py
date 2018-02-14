@@ -105,6 +105,6 @@ for i in range(0, 100):
 invert_x = plt.xlim()[::-1]
 invert_y = plt.ylim()[::-1]
 invert_y
-plt.xlim() = invert_x
+plt.xlim()
 plt.ylim() = invert_y
 plt.show()
