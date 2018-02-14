@@ -94,7 +94,7 @@ plt.show()
 
 
 # sample_trips = np.random.choice(trip_ids, 30000)
-for aspect in ["equal",]
+for aspect in ["equal", ]
 for x in range(10, 50):
     plt.figure(figsize = (18.5, 10.5))
 
@@ -110,5 +110,6 @@ for x in range(10, 50):
     # invert_y
     # plt.xlim(invert_x)
     # plt.ylim(invert_y)
+    plt.axes().set_aspect('equal', 'datalim')
     plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_{:d}.jpg'.format(x), dpi=300)
     # plt.show()
