@@ -135,7 +135,7 @@ data = [[street,
     sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
     for street in streets]
 
-data_sorted = sorted(, key=lambda street: student[2])
+data_sorted = sorted(, key=lambda street: street[2])
 plt.boxplot([street_data[1] for street_data in data])
 
 names = [street_data[0] for street_data in data]
