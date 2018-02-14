@@ -54,3 +54,6 @@ latlon = pd.DataFrame(total_exploded.step_location_list.str.split(',',1).tolist(
 total_exploded = pd.concat([total_exploded, latlon], axis=1, join='inner')
 
 total_exploded["latlon"] = total_exploded.loc[:,["lat", "lon"]].apply(lambda x: ', '.join(x), axis=1)
+
+
+tot
