@@ -102,6 +102,6 @@ for i in range(0, 30):
     plt.plot(sample_30k.loc[sample_30k["id"].isin(rand_index), "lon"],
                 sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"])
 
-typplt.xlim()
+plt.xlim()x[::-1] 
 
 # plt.show()
