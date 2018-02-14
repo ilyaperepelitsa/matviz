@@ -153,4 +153,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert = False):
     data = [[street,
         [data_in.loc[data_in["starting_street"].isin([street]), ["travel_time_per_step"]].values],
         data_in.loc[data_in["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
-        for data_group in data_group]
+        for data_group_var in data_group]
