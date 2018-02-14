@@ -151,6 +151,6 @@ plt.figure(figsize = (18.5, 10.5))
 def plot_boxplots_groups(data_in, data_num, data_group, invert = False):
     plt.figure(figsize = (23.5, 10.5))
     data = [[street,
-        [sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values],
+        [data_in.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values],
         sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
         for street in streets]
