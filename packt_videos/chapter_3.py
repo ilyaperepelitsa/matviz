@@ -75,7 +75,8 @@ plt.show()
 plt.hist(sample_30k["travel_time_per_step"])
 plt.show()
 plt.hist(sample_30k["total_travel_time"])
+
 plt.show()
 
-plt.gcset_size_inches(18.5, 10.5)
+
 fig.savefig('test2png.png', dpi=100)
