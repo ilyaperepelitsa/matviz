@@ -94,6 +94,6 @@ plt.show()
 
 
 sample_trips = np.random.choice(trip_ids, 30000)
-sample_30k.loc[sample_30k["id"].isin(np.random.choice(sample_30k["id"].unique(), 1)), "lat"]
+
 sample_30k.loc[sample_30k["id"].isin(np.random.choice(sample_30k["id"].unique(), 1)), "lon"]
 plt.plot()
