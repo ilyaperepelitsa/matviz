@@ -111,5 +111,5 @@ for aspect in ["equal", "auto"]
         # plt.xlim(invert_x)
         # plt.ylim(invert_y)
         plt.axes().set_aspect(aspect)
-        plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_{}_{:d}.jpg'.format(x), dpi=300)
+        plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_{}_{:d}.jpg'.format(aspect,x), dpi=300)
     # plt.show()
