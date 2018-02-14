@@ -56,4 +56,4 @@ total_exploded = pd.concat([total_exploded, latlon], axis=1, join='inner')
 total_exploded["latlon"] = total_exploded.loc[:,["lat", "lon"]].apply(lambda x: ', '.join(x), axis=1)
 
 
-total_exploded
+total_exploded.info()
