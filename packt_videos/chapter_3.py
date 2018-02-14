@@ -5,7 +5,7 @@ import numpy as np
 
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.figure import Figure
-
+from scipy import stats
 
 
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
