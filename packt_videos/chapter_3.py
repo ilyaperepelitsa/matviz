@@ -94,20 +94,20 @@ plt.show()
 
 
 # sample_trips = np.random.choice(trip_ids, 30000)
-for x in range(10, 50)""
-plt.figure(figsize = (18.5, 10.5))
+for x in range(10, 50):
+    plt.figure(figsize = (18.5, 10.5))
 
-for i in range(0, 100):
-    # print(i)
-    rand_index = np.random.choice(sample_30k["id"].unique(), 1)
+    for i in range(0, 100):
+        # print(i)
+        rand_index = np.random.choice(sample_30k["id"].unique(), 1)
 
-    plt.plot(sample_30k.loc[sample_30k["id"].isin(rand_index), "lon"],
-                sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"])
+        plt.plot(sample_30k.loc[sample_30k["id"].isin(rand_index), "lon"],
+                    sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"])
 
-# invert_x = plt.xlim()[::-1]
-# invert_y = plt.ylim()[::-1]
-# invert_y
-# plt.xlim(invert_x)
-# plt.ylim(invert_y)
-plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_5.jpg', dpi=300)
-plt.show()
+    # invert_x = plt.xlim()[::-1]
+    # invert_y = plt.ylim()[::-1]
+    # invert_y
+    # plt.xlim(invert_x)
+    # plt.ylim(invert_y)
+    plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_5.jpg', dpi=300)
+    plt.show()
