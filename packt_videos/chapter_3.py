@@ -64,5 +64,5 @@ from matplotlib.figure import Figure
 total_exploded = pd.read_csv("~/quant/exploded.csv")
 
 
-total_exploded = ['pooh', 'rabbit', 'piglet', 'Christopher']
+total_exploded.
 >>> np.random.choice(aa_milne_arr, 5, p=[0.5, 0.1, 0.1, 0.3])
