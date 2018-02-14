@@ -129,7 +129,7 @@ plt.show()
 
 data = [[street,
     [sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values],
-    sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values]
+    sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
     for street in streets]
 
 data
