@@ -140,7 +140,10 @@ data_sorted = sorted(data, key=lambda street: street[2])
 plt.boxplot([street_data[1] for street_data in data_sorted])
 
 names = [street_data[0] for street_data in data_sorted]
-data
+plt.xticks(range(1, len(names) +1), names)
+plt.show()
+
+
 
 plt.figure(figsize = (18.5, 10.5))
 # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
