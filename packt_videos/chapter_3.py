@@ -148,5 +148,4 @@ plt.show()
 plt.figure(figsize = (18.5, 10.5))
 # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
 
-def plot_boxplots_groups(data, data_num, data_group, invert = False):
-    
+def plot_boxplots_groups(data_in, data_num, data_group, invert = False):
