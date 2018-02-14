@@ -139,4 +139,6 @@ flier_low = np.random.rand(10) * -100
 data = np.concatenate((spread, center, flier_high, flier_low), 0)
 
 
-s
+spread
+center
+f
