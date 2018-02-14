@@ -59,3 +59,6 @@ from matplotlib.figure import Figure
 # total_exploded.info()
 #
 # total_exploded.to_csv("~/quant/exploded.csv", index = False)
+
+
+# first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
