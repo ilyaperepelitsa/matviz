@@ -103,6 +103,7 @@ for i in range(0, 100):
                 sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"])
 
 invert_x = plt.xlim()[::-1]
+invert_y =
 plt.xlim() = plt.xlim()[::-1]
 plt.ylim() = plt.ylim()[::-1]
 plt.show()
