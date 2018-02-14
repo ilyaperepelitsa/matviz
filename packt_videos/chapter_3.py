@@ -72,7 +72,7 @@ sample_30k = total_exploded.loc[total_exploded["id"].isin(sample_trips), :]
 sample_30k.head()
 plt.hist(sample_30k["distance_per_step"])
 plt.show()
-plt.hist(sample_30k["distance_per_step"])
+plt.hist(sample_30k["travel_time_per_step"])
 plt.show()
 plt.hist(sample_30k["distance_per_step"])
 plt.show()
