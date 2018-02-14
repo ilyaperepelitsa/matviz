@@ -91,3 +91,6 @@ plt.show()
 ###########################################
 ###########################################
 # PLOTTING LINES
+
+
+sample_trips = np.random.choice(trip_ids, 30000)
