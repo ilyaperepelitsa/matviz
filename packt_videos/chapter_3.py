@@ -93,7 +93,7 @@ plt.show()
 # PLOTTING LINES
 
 
-.join(np.random.choice(['-', '--', '-.', ':', 'steps'], 1))
+"".join(np.random.choice(['-', '--', '-.', ':', 'steps'], 1))
 
 # sample_trips = np.random.choice(trip_ids, 30000)
 for aspect in ["equal", "auto"]:
