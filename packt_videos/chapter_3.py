@@ -118,4 +118,4 @@ for aspect in ["equal", "auto"]:
     # plt.show()
 streets = np.random.choice(sample_30k["starting_street"].unique(), 5)
 for street in streets:
-    sample_30k.loc[sample_30k["starting_street"].isin(street),["travel_time_per_step"]].shape()
+    sample_30k.loc[sample_30k["starting_street"].isin([street]),["travel_time_per_step"]].shape()
