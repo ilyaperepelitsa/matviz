@@ -107,5 +107,5 @@ for i in range(0, 100):
 # invert_y
 # plt.xlim(invert_x)
 # plt.ylim(invert_y)
-.savefig('test2png.png', dpi=100)
+plt.savefig('test2png.png', dpi=100)
 plt.show()
