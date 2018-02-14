@@ -137,7 +137,7 @@ data = [[street,
 
 data_sorted = sorted(data, key=lambda street: street[2])
 
-plt.boxplot([street_data[1] for street_data in data_sorted], '', 0)
+plt.boxplot([street_data[1] for street_data in data_sorted],1, '', 0)
 
 names = [street_data[0] for street_data in data_sorted]
 plt.xticks(range(1, len(names) +1), names)
