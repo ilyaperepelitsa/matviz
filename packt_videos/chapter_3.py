@@ -58,4 +58,4 @@ total_exploded["latlon"] = total_exploded.loc[:,["lat", "lon"]].apply(lambda x: 
 
 total_exploded.info()
 
-total_exploded.to_cs
+total_exploded.to_csv("~/quant/fastest_routes_train_part_1.csv")
