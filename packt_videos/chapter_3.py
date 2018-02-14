@@ -171,4 +171,4 @@ def mode_pew(a):
     index = idx[np.argmax(counts)]
     mode = a[index]
 
-print(mode([1, 2, 3, 3, 4]))
+print(mode_pew([1, 2, 3, 3, 4]))
