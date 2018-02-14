@@ -129,11 +129,12 @@ plt.show()
 
 
 plt.figure(figsize = (18.5, 10.5))
-datra
+
 data = [[street,
     [sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values],
     sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
     for street in streets]
+    
 plt.boxplot([street_data[1] for street_data in data])
 
 names = [street_data[0] for street_data in data]
