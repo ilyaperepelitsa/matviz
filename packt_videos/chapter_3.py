@@ -163,4 +163,5 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
         data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].order_func().values[0]]
         for data_group_var in data_group]
-    data_sorted = sorted(data, key=lambda street: street[2])
+
+    data_sorted = sorted(data, key=lambda sort_var: street[2])
