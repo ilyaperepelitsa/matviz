@@ -166,7 +166,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
 order_func = stats.mode[0][0]
 order_func([1, 1, 2, 3])
 
-def mode(a):
+def mode_pew(a):
     (_, idx, counts) = np.unique(a, return_index=True, return_counts=True)
     index = idx[np.argmax(counts)]
     mode = a[index]
