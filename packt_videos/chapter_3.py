@@ -83,4 +83,4 @@ plt.hist(sample_30k["total_travel_time"])
 plt.show()
 
 
-fig.savefig('test2png.png', dpi=100)
+# fig.savefig('test2png.png', dpi=100)
