@@ -107,5 +107,5 @@ for i in range(0, 100):
 # invert_y
 # plt.xlim(invert_x)
 # plt.ylim(invert_y)
-plt.savefig('~', dpi=100)
+plt.savefig('~/', dpi=100)
 plt.show()
