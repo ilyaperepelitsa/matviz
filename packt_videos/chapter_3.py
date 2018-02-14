@@ -163,5 +163,5 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
         for data_group_var in data_group]
 
-order_func = stats.mode
+order_func = stats.mode[0][0]
 order_func([1, 1, 2, 3])
