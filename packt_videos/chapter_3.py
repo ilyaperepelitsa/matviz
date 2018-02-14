@@ -121,4 +121,6 @@ for street in streets:
     print(sample_30k.loc[sample_30k["starting_street"].isin([street]), :].shape)
 
 
+
+plt.figure(figsize = (18.5, 10.5))
 x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
