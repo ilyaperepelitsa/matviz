@@ -171,4 +171,4 @@ def mode(a):
     index = idx[np.argmax(counts)]
     mode = a[index]
 
-mode([1, 2, 3, 3,])
+primode([1, 2, 3, 3, 4])
