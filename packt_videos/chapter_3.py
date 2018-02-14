@@ -123,7 +123,7 @@ plt.figure(figsize = (18.5, 10.5))
 for street in streets:
     plt.boxplot(sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values)
 names = streets
-plt.xticks(range())
+plt.xticks(range(1, ))
 plt.show()
 
 
