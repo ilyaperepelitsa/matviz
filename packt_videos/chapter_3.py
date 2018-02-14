@@ -102,8 +102,8 @@ for i in range(0, 100):
     plt.plot(sample_30k.loc[sample_30k["id"].isin(rand_index), "lon"],
                 sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"])
 
-invert_x = plt.xlim()[::-1]
-invert_y = plt.ylim()[::-1]
+# invert_x = plt.xlim()[::-1]
+# invert_y = plt.ylim()[::-1]
 # invert_y
 # plt.xlim(invert_x)
 # plt.ylim(invert_y)
