@@ -119,4 +119,6 @@ for aspect in ["equal", "auto"]:
 streets = np.random.choice(sample_30k["starting_street"].unique(), 5)
 for street in streets:
     print(sample_30k.loc[sample_30k["starting_street"].isin([street]), :].shape)
+
+    
 [sample_30k.loc[sample_30k["starting_street"].isin([street]), :] for street in streets]
