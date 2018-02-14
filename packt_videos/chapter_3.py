@@ -79,7 +79,7 @@ plt.show()
 plt.figure(figsize = (18.5, 10.5))
 plt.hist(sample_30k["total_travel_time"])
 # plt.gcf().set_size_inches(18.5, 10.5)
-plt.figure(figsize = (18.5, 10.5))
+# plt.figure(figsize = (18.5, 10.5))
 plt.show()
 
 
