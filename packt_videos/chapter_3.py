@@ -165,4 +165,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         for data_group_var in data_group]
 
     data_sorted = sorted(data, key=lambda x: x[2])
-    plt.boxplot([data_data[1] for street_data in data_sorted], 0, '', 0)
+    plt.boxplot([data_gro[1] for street_data in data_sorted], 0, '', 0)
