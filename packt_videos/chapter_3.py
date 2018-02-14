@@ -94,7 +94,7 @@ plt.show()
 
 
 # sample_trips = np.random.choice(trip_ids, 30000)
-for i in range(0, 100):
+for i in range(0, 10):
     # print(i)
     rand_index = np.random.choice(sample_30k["id"].unique(), 1)
 
