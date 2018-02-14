@@ -94,7 +94,7 @@ plt.show()
 
 
 # sample_trips = np.random.choice(trip_ids, 30000)
-for aspect in ["equal", "auto"]
+for aspect in ["equal", "auto"]:
     for x in range(1, 5):
         plt.figure(figsize = (18.5, 10.5))
 
