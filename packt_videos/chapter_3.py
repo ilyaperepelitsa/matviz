@@ -149,4 +149,4 @@ data.shape = (-1, 1)
 data
 
 
-data
+data[::2]
