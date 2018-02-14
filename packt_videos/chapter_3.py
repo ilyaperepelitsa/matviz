@@ -103,7 +103,8 @@ for aspect in ["equal", "auto"]:
             rand_index = np.random.choice(sample_30k["id"].unique(), 1)
 
             plt.plot(sample_30k.loc[sample_30k["id"].isin(rand_index), "lon"],
-                        sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"])
+                        sample_30k.loc[sample_30k["id"].isin(rand_index), "lat"],
+                        )
 
         # invert_x = plt.xlim()[::-1]
         # invert_y = plt.ylim()[::-1]
