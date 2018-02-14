@@ -104,5 +104,5 @@ for i in range(0, 30):
 
 
 plt.xlim() = plt.xlim()[::-1]
-plt.xlim() = plt.xlim()[::-1]
+plt.ylim() = plt.ylim()[::-1]
 # plt.show()
