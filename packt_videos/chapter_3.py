@@ -132,5 +132,7 @@ data = [[street,
     sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median()]
     for street in streets]
 
+data
+
 plt.figure(figsize = (18.5, 10.5))
 # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
