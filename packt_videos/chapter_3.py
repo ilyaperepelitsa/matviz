@@ -156,7 +156,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     elif order_by = "mean":
         order_func = np.mean
     elif order_by = "mode":
-        order_func = stats.mode
+        order_func = stats.mode[0][0]
 
     data = [[data_group_var,
         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
@@ -164,4 +164,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         for data_group_var in data_group]
 
 order_func = stats.mode
-order_func([1, 1, 2, 3])[0][]
+order_func([1, 1, 2, 3])
