@@ -168,5 +168,7 @@ order_func([1, 1, 2, 3])
 
 def mode(a):
     (_, idx, counts) = np.unique(a, return_index=True, return_counts=True)
-index = idx[np.argmax(counts)]
-mode = a[index]
+    index = idx[np.argmax(counts)]
+    mode = a[index]
+
+mode
