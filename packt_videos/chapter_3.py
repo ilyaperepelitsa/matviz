@@ -142,4 +142,5 @@ data = np.concatenate((spread, center, flier_high, flier_low), 0)
 spread
 center
 flier_high
-flier_
+flier_low
+data
