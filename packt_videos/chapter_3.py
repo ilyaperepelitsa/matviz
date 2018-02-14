@@ -160,4 +160,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         for data_group_var in data_group]
 
 order_func = np.median()
-order_func[]
+order_func()
