@@ -137,9 +137,9 @@ data = [[street,
 
 data_sorted = sorted(data, key=lambda street: street[2])
 
-plt.boxplot([street_data[1] for street_data in data])
+plt.boxplot([street_data[1] for street_data in data_sorted])
 
-names = [street_data[0] for street_data in data]
+names = [street_data[0] for street_data in data_sorted]
 data
 
 plt.figure(figsize = (18.5, 10.5))
