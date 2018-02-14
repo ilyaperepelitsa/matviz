@@ -166,4 +166,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
 order_func = stats.mode[0][0]
 order_func([1, 1, 2, 3])
 
-def
+def mode()
