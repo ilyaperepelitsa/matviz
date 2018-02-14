@@ -150,3 +150,4 @@ data
 
 
 data[::2]
+x = range(100)
