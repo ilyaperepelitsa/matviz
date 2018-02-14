@@ -94,4 +94,4 @@ plt.show()
 
 
 sample_trips = np.random.choice(trip_ids, 30000)
-sample_30k
+sample_30k.loc[]
