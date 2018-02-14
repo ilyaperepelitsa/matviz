@@ -110,6 +110,6 @@ for x in range(10, 50):
     # invert_y
     # plt.xlim(invert_x)
     # plt.ylim(invert_y)
-    plt.axes().set_aspect('equal', 'datalim')
+    plt.axes().set_aspect(aspet 'datalim')
     plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_{:d}.jpg'.format(x), dpi=300)
     # plt.show()
