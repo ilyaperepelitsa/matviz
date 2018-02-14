@@ -65,7 +65,7 @@ total_exploded = pd.read_csv("~/quant/exploded.csv")
 
 
 trip_ids = total_exploded["id"].unique()
-sample_trips = np.random.choice(trip_ids, 5000)
+sample_trips = np.random.choice(trip_ids, 30000)
 
 
 total_exploded.loc[total_exploded["id"].isin(sample_trips), :]
