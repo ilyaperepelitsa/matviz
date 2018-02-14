@@ -144,3 +144,4 @@ center
 flier_high
 flier_low
 data
+data.shape
