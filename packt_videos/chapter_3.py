@@ -146,4 +146,7 @@ flier_low
 data
 data.shape
 data.shape = (-1, 1)
-d
+data
+
+
+data
