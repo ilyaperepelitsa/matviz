@@ -134,8 +134,8 @@ data = [[street,
     sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
     for street in streets]
 plt.boxplot([street_data[1] for street_data in data])
-[street_data[0] for street_data in data]
-names = streets
+
+names = [street_data[0] for street_data in data]
 data
 
 plt.figure(figsize = (18.5, 10.5))
