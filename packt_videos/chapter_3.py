@@ -92,7 +92,7 @@ plt.show()
 ###########################################
 # PLOTTING LINES
 
-### Generate a bunch of li
+### Generate a bunch of line graphs and save them
 # "".join(np.random.choice(['-', '--', '-.', ':', 'steps'], 1))
 
 # sample_trips = np.random.choice(trip_ids, 30000)
