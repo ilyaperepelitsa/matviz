@@ -104,4 +104,4 @@ for i in range(0, 30):
 
 plt.xlim()
 
-plt.show()
+# plt.show()
