@@ -58,4 +58,4 @@ total_exploded["latlon"] = total_exploded.loc[:,["lat", "lon"]].apply(lambda x: 
 
 total_exploded.info()
 
-pd.
+total
