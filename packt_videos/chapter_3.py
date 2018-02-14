@@ -121,4 +121,4 @@ for street in streets:
     print(sample_30k.loc[sample_30k["starting_street"].isin([street]), :].shape)
 
 
-[sample_30k.loc[sample_30k["starting_street"].isin([street]), []] for street in streets]
+[sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets]
