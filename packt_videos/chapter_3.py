@@ -117,4 +117,4 @@ for aspect in ["equal", "auto"]:
         plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_{}_{:d}.jpg'.format(aspect, x), dpi=300)
     # plt.show()
 streets = np.random.choice(sample_30k["starting_street"].unique(), 5)
-sample_30k.loc[sample_30k[""],]
+sample_30k.loc[sample_30k["starting_street"],]
