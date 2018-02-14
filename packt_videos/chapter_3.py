@@ -164,4 +164,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         for data_group_var in data_group]
 
 order_func = stats.mode
-order_func([1, 1, 2, 3]).values()
+order_func([1, 1, 2, 3])
