@@ -150,7 +150,7 @@ data
 
 
 data[::2]
-x = range(100)
+x = list(range(100))
 x[::2]
 x[::3]
 x[10:40:6]
