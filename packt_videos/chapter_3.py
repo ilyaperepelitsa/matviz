@@ -143,7 +143,7 @@ names = [street_data[0] for street_data in data_sorted]
 plt.xticks(range(1, len(names) +1), names)
 plt.show()
 
-[street_data[0] for street_data in data_sorted]
+[street_data[2] for street_data in data_sorted]
 
 plt.figure(figsize = (18.5, 10.5))
 # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
