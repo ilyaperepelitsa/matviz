@@ -122,7 +122,8 @@ streets = np.random.choice(sample_30k["starting_street"].unique(), 5)
 plt.figure(figsize = (18.5, 10.5))
 for street in streets:
     plt.boxplot(sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values)
-names = 
+names = streets
+
 plt.show()
 
 
