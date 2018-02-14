@@ -94,7 +94,7 @@ plt.show()
 
 
 # sample_trips = np.random.choice(trip_ids, 30000)
-for x in range(10, )
+for x in range(10, 50)""
 plt.figure(figsize = (18.5, 10.5))
 
 for i in range(0, 100):
