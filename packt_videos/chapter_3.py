@@ -164,6 +164,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].order_func().values[0]]
         for data_group_var in data_group]
 
-    if order = "des"
+    if order = "desc":
     data_sorted = sorted(data, key=lambda x: x[2])
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, '', 0)
