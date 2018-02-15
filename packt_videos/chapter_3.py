@@ -206,7 +206,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     else:
         invert_value = 1
 
-    
+    matplotlib.rc('axes', edgecolor=keycolor)
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
     names = [data_data[0] for data_data in data_sorted]
     # print(data_sorted)
@@ -215,6 +215,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         plt.yticks(range(1, len(names) +1), names)
     else:
         plt.xticks(range(1, len(names) +1), names)
+
+        
 
     plt.savefig('/Users/ilyaperepelitsa/quant/pewpewpew.jpg', dpi=300)
     plt.show()
