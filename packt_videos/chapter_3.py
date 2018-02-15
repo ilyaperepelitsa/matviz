@@ -5,6 +5,7 @@ import numpy as np
 
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.figure import Figure
+import 
 from scipy import stats
 
 
@@ -223,7 +224,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.ylabel(ylabel, color=keycolor,
                fontsize=12)
     # Y axis label
-    plt.xlabel(xlabel color=keycolor,
+    plt.xlabel(xlabel, color=keycolor,
                fontsize=12)
 
     # Graph title
