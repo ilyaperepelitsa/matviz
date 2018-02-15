@@ -185,7 +185,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     # print(data_sorted)
     # print(names)
     if invert_axes:
-        plt.xticks(range(1, len(names) +1), names)
+        plt.yticks(range(1, len(names) +1), names)
     else:
         plt.yticks(range(1, len(names) +1), names)
 
