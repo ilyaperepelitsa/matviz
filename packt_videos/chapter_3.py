@@ -152,7 +152,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     plt.figure(figsize = (23.5, 10.5))
 
 
-    if order_by == "median":
+    if order_by == "mean":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
