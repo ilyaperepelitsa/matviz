@@ -233,8 +233,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                  horizontalalignment="right")
 
     # Graph subtitle
-    plt.title(subtitle, loc = "", fontsize=14,
-                color=keycolor, loc="left")
+    plt.title(subtitle, loc = "left", fontsize=14,
+                color=keycolor)
 
     plt.savefig('/Users/ilyaperepelitsa/quant/pewpewpew.jpg', dpi=300)
     plt.show()
