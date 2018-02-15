@@ -177,6 +177,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     if invert_axes:
         invert_value = 1
     else:
-        invert_value = 1
+        invert_value = 0
 
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
