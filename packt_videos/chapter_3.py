@@ -169,9 +169,9 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     if invert_axes == False:
         canvas_width = 0.4*len(group_labels)
-        canvas_height = 10
+        canvas_height = 13
     else:
-        canvas_width = 10
+        canvas_width = 13
         canvas_height = 0.4*len(group_labels)
 
     plt.figure(figsize = (canvas_width, canvas_height))
