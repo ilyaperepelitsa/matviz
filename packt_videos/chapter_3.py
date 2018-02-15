@@ -190,4 +190,4 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     plt.show()
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
-                    data_grou"starting_street", True, "desc", "median", False)
+                    data_group = "starting_street", invert_axTrue, "desc", "median", False)
