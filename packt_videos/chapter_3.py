@@ -163,7 +163,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(get_top), int):
         group_labels = labels_to_filter[0:int(get_top)]
-    elif get_top == False:
+    if get_top == False:
         group_labels = labels_to_filter.tolist()
     print(group_labels)
 
