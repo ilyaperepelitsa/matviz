@@ -158,7 +158,7 @@ streets = np.random.choice(sample_30k["starting_street"].unique(),5)
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False,
-                            keycolor = "#232626"
+                            keycolor = "#232626",
                             title = None,
                             subtitle = None):
 
@@ -206,6 +206,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     else:
         invert_value = 1
 
+    
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
     names = [data_data[0] for data_data in data_sorted]
     # print(data_sorted)
