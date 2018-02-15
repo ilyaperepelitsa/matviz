@@ -168,11 +168,11 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         group_labels = labels_to_filter.tolist()
 
     if invert_axes == True:
-        canvas_width = 0.2*len(group_labels)
+        canvas_width = 0.4*len(group_labels)
         canvas_height = 10
     else:
         canvas_width = 10
-        canvas_height = 0.2*len(group_labels)
+        canvas_height = 0.4*len(group_labels)
 
     plt.figure(figsize = (canvas_width, canvas_height))
     if order_by == "mean":
