@@ -148,7 +148,7 @@ plt.show()
 plt.figure(figsize = (18.5, 10.5))
 # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
 
-if 5 .is_integer()
+if 5.is_integer()
 
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
