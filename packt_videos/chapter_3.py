@@ -216,7 +216,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     else:
         plt.xticks(range(1, len(names) +1), names)
 
-        plt.xticks(x_pos, objects, color=keycolor)
+    # plt.xticks(x_pos, objects, color=keycolor)
     # Plot Y ticks
     plt.yticks()
 
