@@ -220,7 +220,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
 
     # Y axis label
-    plt.ylabel(ylabel color=keycolor,
+    plt.ylabel(ylabel, color=keycolor,
                fontsize=12)
     # Y axis label
     plt.xlabel(xlabel color=keycolor,
