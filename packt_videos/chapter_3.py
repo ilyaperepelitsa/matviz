@@ -119,37 +119,37 @@ for aspect in ["equal", "auto"]:
 
 
 streets = np.random.choice(sample_30k["starting_street"].unique(),5)
-plt.figure(figsize = (18.5, 10.5))
-# for street in streets:
-#     plt.boxplot(sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values)
-plt.boxplot([[sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values] for street in streets])
-names = streets
-plt.xticks(range(1, len(names) +1), names)
-plt.show()
-
-
-plt.figure(figsize = (23.5, 10.5))
-
-data = [[street,
-    [sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values],
-    sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
-    for street in streets]
-
-data_sorted = sorted(data, key=lambda street: street[2])
-
-plt.boxplot([street_data[1] for street_data in data_sorted], 0, '', 0)
-
-names = [street_data[0] for street_data in data_sorted]
-plt.yticks(range(1, len(names) +1), names)
-plt.show()
-
-[street_data[2] for street_data in data_sorted]
-
-plt.figure(figsize = (18.5, 10.5))
-# x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
-
-5.is_integer()
-pew = 5.0
+# plt.figure(figsize = (18.5, 10.5))
+# # for street in streets:
+# #     plt.boxplot(sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values)
+# plt.boxplot([[sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values] for street in streets])
+# names = streets
+# plt.xticks(range(1, len(names) +1), names)
+# plt.show()
+#
+#
+# plt.figure(figsize = (23.5, 10.5))
+#
+# data = [[street,
+#     [sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].values],
+#     sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]].median().values[0]]
+#     for street in streets]
+#
+# data_sorted = sorted(data, key=lambda street: street[2])
+#
+# plt.boxplot([street_data[1] for street_data in data_sorted], 0, '', 0)
+#
+# names = [street_data[0] for street_data in data_sorted]
+# plt.yticks(range(1, len(names) +1), names)
+# plt.show()
+#
+# [street_data[2] for street_data in data_sorted]
+#
+# plt.figure(figsize = (18.5, 10.5))
+# # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
+#
+# 5.is_integer()
+# pew = 5.0
 
 
 
