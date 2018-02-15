@@ -162,7 +162,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(pew), int):
-        label_range
+        labels_to_filter = labels_to_filter
 
 
     if order_by == "mean":
