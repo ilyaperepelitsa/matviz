@@ -148,6 +148,8 @@ plt.show()
 plt.figure(figsize = (18.5, 10.5))
 # x = np.column_stack([sample_30k.loc[sample_30k["starting_street"].isin([street]), ["travel_time_per_step"]] for street in streets])
 
+if 
+
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False):
@@ -155,7 +157,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if get_top:
-        
+
 
     if order_by == "mean":
         data = [[data_group_var,
