@@ -174,7 +174,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         canvas_width = 10
         canvas_height = 0.2*len(group_labels)
 
-    plt.figure(figsize = (23.5, 10.5))
+    plt.figure(figsize = (canvas_width, 10.5))
     if order_by == "mean":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
