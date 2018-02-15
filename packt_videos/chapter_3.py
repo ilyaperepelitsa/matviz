@@ -167,43 +167,43 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         group_labels = labels_to_filter.tolist()
 
 
-    if order_by == "mean":
-        data = [[data_group_var,
-            [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
-            data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
-            for data_group_var in group_labels]
-    else:
-        data = [[data_group_var,
-            [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
-            data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
-            for data_group_var in group_labels]
-
-
-    if order == "desc":
-        data_sorted = sorted(data, key=lambda x: x[2])
-    else:
-        data_sorted = sorted(data, key=lambda x: x[2], reverse = True)
-
-    if show_outliers:
-        outlier_mark = "c"
-    else:
-        outlier_mark = ""
-
-    if invert_axes:
-        invert_value = 0
-    else:
-        invert_value = 1
-
-    plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
-    names = [data_data[0] for data_data in data_sorted]
-    # print(data_sorted)
-    # print(names)
-    if invert_axes:
-        plt.yticks(range(1, len(names) +1), names)
-    else:
-        plt.xticks(range(1, len(names) +1), names)
-
-    plt.show()
+    # if order_by == "mean":
+    #     data = [[data_group_var,
+    #         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
+    #         data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
+    #         for data_group_var in group_labels]
+    # else:
+    #     data = [[data_group_var,
+    #         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
+    #         data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
+    #         for data_group_var in group_labels]
+    #
+    #
+    # if order == "desc":
+    #     data_sorted = sorted(data, key=lambda x: x[2])
+    # else:
+    #     data_sorted = sorted(data, key=lambda x: x[2], reverse = True)
+    #
+    # if show_outliers:
+    #     outlier_mark = "c"
+    # else:
+    #     outlier_mark = ""
+    #
+    # if invert_axes:
+    #     invert_value = 0
+    # else:
+    #     invert_value = 1
+    #
+    # plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
+    # names = [data_data[0] for data_data in data_sorted]
+    # # print(data_sorted)
+    # # print(names)
+    # if invert_axes:
+    #     plt.yticks(range(1, len(names) +1), names)
+    # else:
+    #     plt.xticks(range(1, len(names) +1), names)
+    #
+    # plt.show()
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
