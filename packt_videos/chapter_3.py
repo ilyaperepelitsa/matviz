@@ -231,6 +231,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.suptitle(title + "\n",
                     # y=1.03, x = 0.35,
                 horizontalalignment="center",
+                horizontalalignment="center"
+                horizontalalignment="center",
                  fontsize=18, color=keycolor,
                  )
 
