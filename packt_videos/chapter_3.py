@@ -153,8 +153,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             show_outliers = True, get_top = False):
     plt.figure(figsize = (23.5, 10.5))
 
-    data_in.groupby([data_group]).size().sort_values(ascending = False).index
-    
+    labels_todata_in.groupby([data_group]).size().sort_values(ascending = False).index
+
     if order_by == "mean":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
