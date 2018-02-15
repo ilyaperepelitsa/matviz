@@ -187,10 +187,13 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     if invert_axes:
         plt.yticks(range(1, len(names) +1), names)
     else:
-        plt.yticks(range(1, len(names) +1), names)
+        plt.xticks(range(1, len(names) +1), names)
 
     plt.show()
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "median", show_outliers = False)
+
+
+sample_30k.g
