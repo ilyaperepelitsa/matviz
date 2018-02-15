@@ -164,7 +164,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     if isinstance(int(get_top), int):
         labels_to_filter = labels_to_filter[0:int(get_top)]
     else:
-        
+        labels_to_filter = labels_to_filter[0:int(get_top)]
 
 
     if order_by == "mean":
