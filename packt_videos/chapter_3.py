@@ -162,16 +162,16 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(get_top), int):
-        gri = labels_to_filter[0:int(get_top)]
+        group_labels = labels_to_filter[0:int(get_top)]
     else:
-        labels_to_filter = labels_to_filter
+        group_labels = labels_to_filter
 
 
     if order_by == "mean":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
-            for data_group_var in data_in[data_group].unique()[0:20]]
+            for data_group_var in ]
     else:
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
