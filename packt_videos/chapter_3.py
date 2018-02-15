@@ -160,7 +160,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             show_outliers = True, get_top = False,
                             keycolor = "#232626",
                             title = None,
-                            subtitle = None):
+                            subtitle = None,
+                            xlav):
 
 
 
@@ -216,9 +217,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     else:
         plt.xticks(range(1, len(names) +1), names, color=keycolor)
 
-    # plt.xticks(x_pos, objects, color=keycolor)
-    # Plot Y ticks
-    # plt.yticks()
 
     # Y axis label
     plt.ylabel('Number of document accessions per %s' % (agg_period), color=keycolor,
