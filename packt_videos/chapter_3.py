@@ -152,6 +152,9 @@ plt.figure(figsize = (18.5, 10.5))
 pew = 5
 pew.is_integer()
 
+
+isinstance(3, int)
+
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False):
