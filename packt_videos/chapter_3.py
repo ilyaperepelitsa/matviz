@@ -220,7 +220,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
 
     # Y axis label
-    plt.ylabel('Number of document accessions per %s' % (agg_period), color=keycolor,
+    plt.ylabel(y color=keycolor,
                fontsize=12)
 
     # Graph title
