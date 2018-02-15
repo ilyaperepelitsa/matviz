@@ -153,7 +153,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
 
     if order_by == "median":
         order_func = np.median
-    elif order_by = "mean":
+    elif order_by == "mean":
         order_func = np.mean
     else:
         order_func = np.median
