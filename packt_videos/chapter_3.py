@@ -153,7 +153,7 @@ pew = 5
 pew.is_integer()
 
 
-isinstance(pew, int)
+
 
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
