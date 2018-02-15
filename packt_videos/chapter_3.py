@@ -151,7 +151,6 @@ plt.figure(figsize = (18.5, 10.5))
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, order = "desc", order_by = "median", show_outliers = True):
     plt.figure(figsize = (23.5, 10.5))
 
-    DataFrame([])
 
     if order_by == "median":
         order_func = np.median
