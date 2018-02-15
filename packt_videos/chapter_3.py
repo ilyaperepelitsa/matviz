@@ -164,7 +164,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     if isinstance(int(get_top), int):
         group_labels = labels_to_filter[0:int(get_top)]
     else:
-        group_labels = labels_to_filter
+        group_labels = labels_to_filter[0:int(get_top)]
 
 
     if order_by == "mean":
@@ -211,7 +211,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     get_top = 3)
 
 
-sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False).index.shape
+sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False).index.shape[0]
 dir(pd.Series)
 sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False)
 # .reset_index(name='counts')
