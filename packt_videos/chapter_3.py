@@ -158,7 +158,7 @@ pew = 5.0
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False):
-    plt.figure(figsize = (23.5, 10.5))
+
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(get_top), int):
@@ -167,9 +167,14 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     if get_top == False:
         group_labels = labels_to_filter.tolist()
 
-    if invert_axes == True:
-        canvas_height = 
+    if invert_axes == False:
+        canvas_width = 0.4*len(group_labels)
+        canvas_height = 10
+    else:
+        canvas_width = 10
+        canvas_height = 0.4*len(group_labels)
 
+    plt.figure(figsize = (canvas_width, canvas_height))
     if order_by == "mean":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
@@ -211,7 +216,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "median", show_outliers = False,
-                    get_top = 30)
+                    get_top = 100)
 
 
 sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False).index.shape[0]
