@@ -176,7 +176,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
-            for data_group_var in data_in[data_group].unique()[0:20]]
+            for data_group_var in group_labels]
 
 
     if order == "desc":
