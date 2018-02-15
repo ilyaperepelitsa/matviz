@@ -154,7 +154,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.figure(figsize = (23.5, 10.5))
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
-
+    if
 
     if order_by == "mean":
         data = [[data_group_var,
