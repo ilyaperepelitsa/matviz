@@ -181,8 +181,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
 
     # plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
     names = [data_data[0] for data_data in data_sorted]
-    print(da)
-    print(names)
+    print(data_sorted)
+    # print(names)
     # if invert_axes:
     #     plt.yticks(range(1, len(names) +1), names)
     # else:
