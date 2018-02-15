@@ -5,7 +5,7 @@ import numpy as np
 
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.figure import Figure
-import 
+import matplotlib
 from scipy import stats
 
 
