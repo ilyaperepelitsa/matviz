@@ -159,10 +159,10 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False,
                             keycolor = "#232626",
-                            title = None,
+                            title = "None",
                             subtitle = None,
                             xlabel = None,
-                            ylabel = Non):
+                            ylabel = None):
 
 
 
