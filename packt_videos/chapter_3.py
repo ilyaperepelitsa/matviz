@@ -211,7 +211,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     else:
         plt.xticks(range(1, len(names) +1), names)
 
-    
+    plt.savefig('/Users/ilyaperepelitsa/quant/taxi_test_{}_{:d}.jpg'.format(aspect, x), dpi=300)
     plt.show()
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
