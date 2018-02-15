@@ -150,7 +150,7 @@ plt.figure(figsize = (18.5, 10.5))
 
 5.is_integer()
 pew = 5.0
-isinstance(pew, int) or isinstance(pew, float)
+isinstance(int(pew, int) or isinstance(pew, float)
 
 
 
