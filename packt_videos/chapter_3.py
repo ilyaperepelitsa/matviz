@@ -171,7 +171,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         canvas_width = 0.2*len(group_labels)
         canvas_height = 10
     else:
-         = 10
+        canvas_width = 10
         canvas_height = 0.2*len(group_labels)
 
     if order_by == "mean":
