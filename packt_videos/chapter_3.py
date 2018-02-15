@@ -196,5 +196,5 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     order = "desc", order_by = "median", show_outliers = False)
 
 
-DataFrame(sample_30k.groupby(["starting_street"]).size()
+DataFrame(sample_30k.groupby(["starting_street"]).size().order()
 # .reset_index(name='counts')
