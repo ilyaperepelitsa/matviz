@@ -197,5 +197,5 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
 
 
 sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False).index()
-p
+dir(pd.Series)
 # .reset_index(name='counts')
