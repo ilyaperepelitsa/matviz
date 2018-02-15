@@ -161,7 +161,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             keycolor = "#232626",
                             title = "Don't forget your titles.",
                             subtitle = "Don't forget your subtitles.",
-                            xlabel = None,
+                            xlabel = "",
                             ylabel = None):
 
 
