@@ -158,7 +158,7 @@ pew = 5.0
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False):
-    plt.figure(figsize = (23.5, 10.5))
+
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(get_top), int):
@@ -173,7 +173,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     else:
         canvas_width = 10
         canvas_height = 0.2*len(group_labels)
-
+        plt.figure(figsize = (23.5, 10.5))
     if order_by == "mean":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
