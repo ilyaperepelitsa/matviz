@@ -238,7 +238,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.text(y=0.98 , x = 0,
                 subtitle,
 
-                 loc = "left", fontsize=14,
+                 horizontalalignment = "left", fontsize=14,
                 color=keycolor)
 
     # Graph subtitle
