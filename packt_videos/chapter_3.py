@@ -159,8 +159,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False,
                             keycolor = "#232626",
-                            title = "Don't forget your titles",
-                            subtitle = None,
+                            title = "Don't forget your titles.",
+                            subtitle = Don't forget your titles.,
                             xlabel = None,
                             ylabel = None):
 
