@@ -173,5 +173,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         outlier_mark = "c"
     else:
         outlier_mark = ""
+    
 
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, 0)
