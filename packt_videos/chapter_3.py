@@ -223,11 +223,11 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.ylabel(ylabel color=keycolor,
                fontsize=12)
     # Y axis label
-    plt.xlabel(ylabel color=keycolor,
+    plt.xlabel(xlabel color=keycolor,
                fontsize=12)
 
     # Graph title
-    plt.suptitle('Millenium Pipeline Documents, %s total' % (title_label), y=1.05,
+    plt.suptitle(title y=1.05,
                  fontsize=18, color=keycolor,
                  horizontalalignment="right")
 
