@@ -232,8 +232,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                  horizontalalignment="right")
 
     # Graph subtitle
-    plt.title('All document accessions provided by FERC library from %s to %s.' %
-              (date_start, date_end),
+    plt.title(subtitle
               y=1.05, fontsize=14, color=keycolor,
               loc="left")
 
