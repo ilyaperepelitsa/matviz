@@ -184,3 +184,5 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
 
     plt.yticks(range(1, len(names) +1), names)
     plt.show()
+
+plot_boxplots_groups()
