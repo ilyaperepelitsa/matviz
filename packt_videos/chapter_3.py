@@ -231,7 +231,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.suptitle(title + "\n",
                     # y=1.03, x = 0.35,
                 horizontalalignment="right",
-                # horizontalalignment="left",
+                horizontalalignment="left",
                 # horizontalalignment="center",
                  fontsize=18, color=keycolor,
                  )
@@ -244,6 +244,11 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     # plt.savefig('/Users/ilyaperepelitsa/quant/pewpewpew.jpg', dpi=300)
     plt.show()
+
+plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
+                    data_group = "starting_street", invert_axes = True,
+                    order = "desc", order_by = "median", show_outliers = False,
+                    get_top = 10)
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
