@@ -162,7 +162,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             title = "Don't forget your titles.",
                             subtitle = "Don't forget your subtitles.",
                             xlabel = "Label X axis",
-                            ylabel = None):
+                            ylabel = "Label X axis"):
 
 
 
