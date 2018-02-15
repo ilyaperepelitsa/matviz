@@ -157,12 +157,12 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
-            for data_group_var in data_in[data_group].unique()[0:]]
+            for data_group_var in data_in[data_group].unique()[0:20]]
     else:
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
-            for data_group_var in data_in[data_group].unique()]
+            for data_group_var in data_in[data_group].unique()[0:20]]
 
 
     if order == "desc":
