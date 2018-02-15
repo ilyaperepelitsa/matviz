@@ -252,7 +252,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     order = "desc", order_by = "median", show_outliers = False,
                     get_top = 10,
                     ylabel = "Trip starting street",
-                    )
+                    xlabel = )
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
