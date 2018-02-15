@@ -234,7 +234,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                  horizontalalignment="right")
 
     # Graph subtitle
-    plt.title( + subtitle"\n\n",
+    plt.title(subtitle + "\n\n",
                 # y=1.01, x = 0,
                  loc = "left", fontsize=14,
                 color=keycolor)
