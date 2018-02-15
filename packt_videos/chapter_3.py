@@ -151,6 +151,8 @@ plt.figure(figsize = (18.5, 10.5))
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, order = "desc", order_by = "median", show_outliers = True):
     plt.figure(figsize = (23.5, 10.5))
 
+    df = pd.DataFrame([])
+df.instrument_name = 'Binky'
     if order_by == "median":
         order_func = np.median
     elif order_by == "mean":
@@ -158,7 +160,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     else:
         order_func = np.median
 
-        
+
     data = [[data_group_var,
         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
         data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].order_func().values[0]]
