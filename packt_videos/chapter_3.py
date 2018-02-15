@@ -156,7 +156,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
-            for data_group_var in data_group]
+            for data_group_var in ]
     else:
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
@@ -191,5 +191,5 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     # plt.show()
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
-                    data_group = ["starting_street"], invert_axes = True,
+                    data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "median", show_outliers = False)
