@@ -212,9 +212,9 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     # print(data_sorted)
     # print(names)
     if invert_axes:
-        plt.yticks(range(1, len(names) +1), names)
+        plt.yticks(range(1, len(names) +1), names, color=keycolor)
     else:
-        plt.xticks(range(1, len(names) +1), names)
+        plt.xticks(range(1, len(names) +1), names,)
 
     # plt.xticks(x_pos, objects, color=keycolor)
     # Plot Y ticks
