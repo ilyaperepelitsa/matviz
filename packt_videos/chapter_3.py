@@ -183,9 +183,9 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     names = [data_data[0] for data_data in data_sorted]
 
     if invert_axes:
-        invert_value = 1
+        plt.yticks(range(1, len(names) +1), names)
     else:
-        invert_value = 0
+        plt.xticks(range(1, len(names) +1), names)
 
     plt.show()
 
