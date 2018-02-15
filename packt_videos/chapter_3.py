@@ -152,7 +152,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
     plt.figure(figsize = (23.5, 10.5))
 
     df = pd.DataFrame([])
-    df.order_func =
+    df.order_func = np.median
     if order_by == "median":
         order_func = np.median
     elif order_by == "mean":
