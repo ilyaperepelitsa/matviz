@@ -159,7 +159,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False,
                             keycolor = "#232626",
-                            title = "Have your title here.",
+                            title = "Don't forget",
                             subtitle = None,
                             xlabel = None,
                             ylabel = None):
