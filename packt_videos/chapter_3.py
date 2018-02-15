@@ -158,9 +158,10 @@ streets = np.random.choice(sample_30k["starting_street"].unique(),5)
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False,
+                            keycolor = "#232626"
                             title = None,
                             subtitle = None):
-                            
+
 
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
