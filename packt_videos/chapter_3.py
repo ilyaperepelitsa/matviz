@@ -161,7 +161,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
-            for data_group_var in data_in[data_group].values()]
+            for data_group_var in data_in[data_group].unique()]
 
 
     if order == "desc":
@@ -181,7 +181,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
 
     # plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value)
     names = [data_data[0] for data_data in data_sorted]
-    print(data_sorted)
+    # print(data_sorted)
     # print(names)
     # if invert_axes:
     #     plt.yticks(range(1, len(names) +1), names)
