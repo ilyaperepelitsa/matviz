@@ -159,7 +159,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False, ord
         order_func = np.mean
     else:
         order_func = np.median
-    df.instrument_name =
+    df.instrument_name = order_func
 
     data = [[data_group_var,
         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
