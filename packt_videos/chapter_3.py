@@ -265,7 +265,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
-                    order = "desc", order_by = "iqr", show_outliers = False,
+                    order = "desc", order_by = "mean", show_outliers = False,
                     get_top = 20)
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
