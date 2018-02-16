@@ -283,8 +283,7 @@ sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False)
 
 sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
         ["travel_time_per_step"]].sort_values(by = ["travel_time_per_step"],ascending = False) *\
-if order_by == "mean":
-    data = [[data_group_var,
-        [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
-        data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
-        for data_group_var in group_labels]
+
+
+sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
+        ["travel_time_per_step"]].sort_values(by = ["travel_time_per_step"],ascending = False)
