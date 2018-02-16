@@ -195,7 +195,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].quantile(.25)]
             for data_group_var in group_labels]
 
-    elif order_by == "m":
+    elif order_by == "median":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].median().values[0]]
