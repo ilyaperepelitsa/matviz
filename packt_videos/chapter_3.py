@@ -282,9 +282,9 @@ sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False)
 # .reset_index(name='counts')
 
 sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-        ["travel_time_per_step"]].sort_values(by = ["travel_time_per_step"],ascending = False)
+        ["travel_time_per_step"]].sort_values(by = ["travel_time_per_step"],ascending = False).quantile(.1)
 
 
 
 sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-        ["travel_time_per_step"]].sort_values(by = ["travel_time_per_step"],ascending = False).shape[0]
+        ["travel_time_per_step"]].quantile(.1)
