@@ -288,4 +288,4 @@ sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
 
 sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
         ["travel_time_per_step"]].quantile(.25) - sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-                ["travel_time_per_step"]].quantile(.25)
+                ["travel_time_per_step"]].quantile(.75)
