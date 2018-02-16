@@ -188,9 +188,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
             for data_group_var in group_labels]
 
-    elif order_by == "iqr
-
-    ":
+    elif order_by == "iqr":
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].mean().values[0]]
@@ -288,4 +286,4 @@ sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
 
 sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
         ["travel_time_per_step"]].quantile(.75) - sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-                ["travel_time_per_step"]].quantile(.75)
+                ["travel_time_per_step"]].quantile(.25)
