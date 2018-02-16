@@ -281,7 +281,7 @@ dir(pd.Series)
 sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False)
 # .reset_index(name='counts')
 
-sample_30k.loc[sample_30k["starting_street"].isin(["Broadwa"]), [data_num]]
+sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]), [travel_time_per_step]]
 if order_by == "mean":
     data = [[data_group_var,
         [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
