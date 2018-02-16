@@ -192,7 +192,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         data = [[data_group_var,
             [data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].values],
             data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].quantile(.75) - \
-            data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].quantile(.75) - \
+            data_in.loc[data_in[data_group].isin([data_group_var]), [data_num]].quantile(.25)
             ]
             for data_group_var in group_labels]
 
