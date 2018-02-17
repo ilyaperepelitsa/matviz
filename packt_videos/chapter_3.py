@@ -15,7 +15,7 @@ color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 cmap = defaultdict(lambda: next(color_cycler)["color"])
 
 for i in range(1, 5):
-    color = cmap("pew")
+    color = cmap(["pew"])
     print(color)
 
 for i in range(1, 5):
