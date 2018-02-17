@@ -16,7 +16,7 @@ cmap = lambda x: {x, next(color_cycler)["color"]}
 
 pew = []
 for i in range(1, 5):
-    color = cmap(i)
+    plot_cols[data_data[0]] = cmap(data_data[0])[data_data[0]]
     print(color)
 
 for i in range(1, 5):
