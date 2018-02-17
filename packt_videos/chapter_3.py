@@ -276,7 +276,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                 boxprops = {'color': keycolor, 'facecolor': '#5e5757', 'zorder' : 999}
                 # boxprops = {'color': keycolor, 'facecolor': plot_cols, 'zorder' : 999}
                 )
-    for fig in plt.figures():
+    for fig in plt.figure():
         print(fig)
 
     names = [data_data[0] for data_data in data_sorted]
