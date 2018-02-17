@@ -260,8 +260,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
-                    get_top = 40,
-                    subtitle = "40 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    get_top = 10,
+                    subtitle = "10 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
