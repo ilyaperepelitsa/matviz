@@ -8,6 +8,7 @@ from matplotlib.figure import Figure
 import matplotlib
 from scipy import stats
 
+boxplot
 
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 # second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
@@ -259,7 +260,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
                     get_top = 40,
-                    subtitle = "20 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    subtitle = "40 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
