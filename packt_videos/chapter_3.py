@@ -237,6 +237,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plot_cols = dict()
     for data_data in data_sorted:
          # for data_data in data_sorted
+         pr
         plot_cols[data_data[0]] = cmap(data_data[0])[data_data[0]]
         # print(color)
 
