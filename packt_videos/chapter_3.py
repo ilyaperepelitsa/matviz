@@ -12,7 +12,7 @@ import matplotlib
 from scipy import stats
 
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-cmap = lambda x: {next(color_cycler)["color"]}
+cmap = lambda x: {x, next(color_cycler)["color"]}
 
 pew = []
 for i in range(1, 5):
@@ -233,6 +233,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         invert_value = 1
 
     matplotlib.rc('axes', edgecolor=keycolor)
+
+    for
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
                 patch_artist = True,
                 whiskerprops = {'color': "#8999b2", 'linewidth' : 9.5, 'zorder' : 0},
