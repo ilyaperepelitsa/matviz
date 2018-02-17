@@ -226,7 +226,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                 # capprops = {'color': keycolor, 'linewidth' : 4},
                 showcaps=False,
 
-                boxprops = {'color': keycolor, 'facecolor': '#353535', 'zorder' : 999}
+                boxprops = {'color': "#ffffff", 'facecolor': '#353535', 'zorder' : 999}
                 # boxprops = {'color': keycolor, 'facecolor': keycolor, 'zorder' : 999}
                 )
     names = [data_data[0] for data_data in data_sorted]
@@ -269,7 +269,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
                     get_top = 20,
-                    subtitle = "5 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    subtitle = "20 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
