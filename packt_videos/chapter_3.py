@@ -249,7 +249,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                     # capprops = {'color': keycolor, 'linewidth' : 4},
                     showcaps=False,
 
-                    boxprops = {'color': keycolor, 'facecolor': plot_cols[], 'zorder' : 999}
+                    boxprops = {'color': keycolor, 'facecolor': plot_cols[data_data[0]], 'zorder' : 999}
                     # boxprops = {'color': keycolor, 'facecolor': keycolor, 'zorder' : 999}
                     )
 
