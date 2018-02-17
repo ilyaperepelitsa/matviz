@@ -1,4 +1,4 @@
-fro
+from itertools 
 
 # from IPython.display import display_png
 import matplotlib.pyplot as plt
