@@ -14,8 +14,9 @@ from scipy import stats
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 cmap = lambda x: [x, next(color_cycler)["color"]]
 
-type(cmap(1))
+# type(cmap(1))
 pew = []
+plot_cols = dict()
 for i in range(1, 5):
     plot_cols[str(i)] = cmap(str(i))[1]
     # print(color)
