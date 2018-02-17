@@ -12,7 +12,7 @@ import matplotlib
 from scipy import stats
 
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-cmap = lambda x: x, next(color_cycler)["color"]}
+cmap = lambda x: x, next(color_cycler)["color"]
 
 type(cmap(1))
 pew = []
