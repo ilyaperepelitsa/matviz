@@ -234,6 +234,9 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     matplotlib.rc('axes', edgecolor=keycolor)
 
+    
+
+
     for data_data in data_sorted:
         plt.boxplot(data_data[1], 0, outlier_mark, invert_value,
                     patch_artist = True,
