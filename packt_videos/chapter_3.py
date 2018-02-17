@@ -20,6 +20,8 @@ plot_cols = dict()
 for i in range(1, 5):
     plot_cols[str(i)] = cmap(str(i))[1]
     # print(color)
+plot_cols
+
 
 for i in range(1, 5):
     color = cmap()
