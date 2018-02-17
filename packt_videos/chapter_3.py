@@ -235,7 +235,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     matplotlib.rc('axes', edgecolor=keycolor)
 
     plot_cols = []
-    for i in range(1, 5):
+    for data_data in data_sorted:
         data_data[0] for data_data in data_sorted
         color = cmap("pew")
         print(color)
