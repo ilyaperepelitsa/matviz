@@ -1,4 +1,4 @@
-from itertools 
+from itertools import cycle
 
 # from IPython.display import display_png
 import matplotlib.pyplot as plt
