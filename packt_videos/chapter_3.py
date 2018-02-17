@@ -221,7 +221,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     matplotlib.rc('axes', edgecolor=keycolor)
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
                 whiskerprops = {'color': "#6dedd1", 'linewidth' : 9, 'zorder' : 0},
-                medianprops = {'color': keycolor, 'linewidth' : 2},
+                medianprops = {'color': keycolor, 'linewidth' : 1.8},
                 capprops = {'color': keycolor, 'linewidth' : 4},
                 boxprops = {'color': keycolor, 'zorder' : 999}
                 )
