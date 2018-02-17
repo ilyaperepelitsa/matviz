@@ -18,6 +18,8 @@ for i in range(1, 5):
     color = cmap()
     print(color)
 
+
+
 pew = "random"
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 # second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
