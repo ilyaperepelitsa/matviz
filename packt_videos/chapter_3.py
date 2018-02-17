@@ -222,7 +222,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
                 whiskerprops = {'color': "#6dedd1", 'linewidth' : 10, 'zorder' : 0 },
                 medianprops = {'color': keycolor},
-                boxprops = {'color': 6dedd1, 'facecolor': 6dedd1}
+                boxprops = {'color': base_color, 'facecolor': base_color}
                 )
     names = [data_data[0] for data_data in data_sorted]
     # print(data_sorted)
