@@ -11,9 +11,13 @@ from matplotlib.figure import Figure
 import matplotlib
 from scipy import stats
 
+color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
+cmap = defaultdict(lambda: next(color_cycler)["color"])
 
-for i in ran
+for i in range(1, 5):
+    print(i)
 
+pew = "random"
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 # second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
 # total_set = pd.concat([first_set, second_set])
