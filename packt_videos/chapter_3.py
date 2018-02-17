@@ -16,18 +16,18 @@ cmap = lambda x: {x, next(color_cycler)["color"]}
 
 pew = []
 for i in range(1, 5):
-    color = cmap("pew")
+    color = cmap(i)
     print(color)
 
 for i in range(1, 5):
     color = cmap()
     print(color)
 
-    plot_cols = dict()
-    for data_data in data_sorted:
-         # for data_data in data_sorted
-         # print(data_data[0])
-         plot_cols[data_data[0]] = cmap(data_data[0])[data_data[0]]
+plot_cols = dict()
+for data_data in data_sorted:
+     # for data_data in data_sorted
+     # print(data_data[0])
+     plot_cols[data_data[0]] = cmap(data_data[0])[data_data[0]]
 
 
 pew = "random"
