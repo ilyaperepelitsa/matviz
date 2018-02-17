@@ -14,9 +14,9 @@ from scipy import stats
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 cmap = lambda: next(color_cycler)["color"]
 
-pew 
+pew = []
 for i in range(1, 5):
-    color = cmap()
+    color = cmap("pew")
     print(color)
 
 for i in range(1, 5):
