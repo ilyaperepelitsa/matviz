@@ -12,7 +12,7 @@ import matplotlib
 from scipy import stats
 
 
-
+for i in ran
 
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 # second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
