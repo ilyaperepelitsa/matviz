@@ -211,7 +211,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                 # boxprops = {'color': keycolor, 'facecolor': keycolor, 'zorder' : 999}
                 )
 
-    plot_cols = dict()
+    # plot_cols = dict()
     for patch in boxes["boxes"]:
         patch.set_facecolor(cmap())
          # plot_cols[data_data[0]] = cmap(data_data[0])[1]
