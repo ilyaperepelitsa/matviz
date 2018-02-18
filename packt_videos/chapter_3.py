@@ -186,7 +186,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
          # plot_cols[data_data[0]] = cmap(data_data[0])[1]
          print(cmap())
 
-    print(pew["boxes"])
+    # print(pew["boxes"])
 
     names = [data_data[0] for data_data in data_sorted]
     # print(data_sorted)
