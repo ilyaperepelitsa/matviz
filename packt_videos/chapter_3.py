@@ -8,7 +8,8 @@ from matplotlib.figure import Figure
 import matplotlib
 from scipy import stats
 
-
+from itertools import cycle
+from collections import defaultdict
 
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 # second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
