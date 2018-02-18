@@ -131,7 +131,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         canvas_height = 13
     else:
         canvas_width = 13
-        canvas_height = 0.4*len(group_labels)+ 0.7
+        canvas_height = 0.4*len(group_labels)+ 0.8
 
     plt.figure(figsize = (canvas_width, canvas_height))
     if order_by == "mean":
@@ -228,7 +228,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
-                    get_top = 5,
+                    get_top = 12,
                     subtitle = "5 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
