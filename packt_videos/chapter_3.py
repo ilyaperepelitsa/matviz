@@ -1,5 +1,5 @@
 from itertools import cycle
-from collections import defaultdict
+from collections import 
 
 # from IPython.display import display_png
 import matplotlib.pyplot as plt
@@ -11,19 +11,8 @@ from matplotlib.figure import Figure
 import matplotlib
 from scipy import stats
 
-color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-cmap = lambda x: {next(color_cycler)["color"]}
 
-pew = []
-for i in range(1, 5):
-    color = cmap("pew")
-    print(color)
 
-for i in range(1, 5):
-    color = cmap()
-    print(color)
-
-pew = "random"
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
 # second_set = pd.read_csv("~/quant/fastest_routes_train_part_2.csv")
 # total_set = pd.concat([first_set, second_set])
@@ -282,8 +271,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
-                    get_top = 20,
-                    subtitle = "20 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    get_top = 5,
+                    subtitle = "5 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
