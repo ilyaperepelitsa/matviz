@@ -116,8 +116,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             ylabel = "Label Y axis"):
 
     color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-    cmap = lambda x: [x, next(color_cycler)["color"]]
-    cmap = lambda: [next(color_cycler)["color"]]
+    # cmap = lambda x: [x, next(color_cycler)["color"]]
+    cmap = lambda: next(color_cycler)["color"]
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(get_top), int):
