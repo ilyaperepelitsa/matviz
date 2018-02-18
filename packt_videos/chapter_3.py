@@ -127,7 +127,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         group_labels = labels_to_filter.tolist()
 
     if invert_axes == False:
-        canvas_width = 0.4*len(group_labels)
+        canvas_width = 0.4*len(group_labels) +
         canvas_height = 13
     else:
         canvas_width = 13
@@ -229,7 +229,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
                     get_top = 5,
-                    subtitle = "4 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    subtitle = "5 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
