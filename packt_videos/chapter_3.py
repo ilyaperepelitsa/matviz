@@ -20,7 +20,7 @@ palette = ["#54637a", "#54787a","#547a63", "#6b7a54", "#918e5f",
 palette = ["#c19c9e", "#c19cac","#c19cbc", "#b29cc1", "#9c9dc1",
             "#9cb0c1", "#9cc1bd", "#9cc1a2","#bcc19c", "#c1b19c",
             "#c1a09c"]
-# palette
+palette
 shuffle(palette)
 # palette
 # palette2
