@@ -12,7 +12,7 @@ from itertools import cycle
 from cycler import cycler
 from collections import defaultdict
 
-plt.rcParams["axes.prop_cycle"][0]
+plt.rcParams["axes.prop_cycle"]
 plt.rc("axes", prop_cycle = (cycler("color", ["#54637a", "#54787a",
                                     "#547a63", "#6b7a54", "#918e5f",
                                     "#b29563", "#bf8765", "#bf7265",
