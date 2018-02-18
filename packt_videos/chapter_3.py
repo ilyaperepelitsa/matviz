@@ -12,22 +12,19 @@ import matplotlib
 from scipy import stats
 
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-cmap = lambda x: [x, next(color_cycler)["color"]]
+cmap = lambda x: {x, next(color_cycler)["color"]}
 
-# type(cmap(1))
+cmap
 pew = []
-plot_cols = dict()
 for i in range(1, 5):
-    plot_cols[str(i)] = cmap(str(i))[1]
+    plot_cols.update({}) = cmap(str(i))[str(i)]
     # print(color)
-
-
 
 for i in range(1, 5):
     color = cmap()
     print(color)
 
-
+plot_cols = dict()
 for data_data in data_sorted:
      # for data_data in data_sorted
      # print(data_data[0])
