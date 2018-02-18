@@ -115,16 +115,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             xlabel = "Label X axis",
                             ylabel = "Label Y axis"):
 
-    color_cycler = cycle(plt.rc("axes", def foo():
-        doc = "The  property."
-        def fget(self):
-            return self._
-        def fset(self, value):
-            self._ = value
-        def fdel(self):
-            del self._
-        return locals()
-     = property(**())))
+    color_cycler = cycle(plt.rc("axes", prop))
     color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
     # cmap = lambda x: [x, next(color_cycler)["color"]]
     cmap = lambda: next(color_cycler)["color"]
