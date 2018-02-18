@@ -199,8 +199,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         invert_value = 1
 
     matplotlib.rc('axes', edgecolor=keycolor)
-    palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a',
-                '#918e5f','#bf8765','#4e3f63','#824a6b','#547a63','#6b7a54']
+    # palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a',
+    #             '#918e5f','#bf8765','#4e3f63','#824a6b','#547a63','#6b7a54']
 
     palette23 = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
                 '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
@@ -258,7 +258,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                  loc = "left", fontsize=18,
                 color=keycolor)
 
-    plt.savefig('/Users/ilyaperepelitsa/quant/pewpewpew2.jpg', dpi=300)
+    plt.savefig('/Users/ilyaperepelitsa/quant/pewpewpew23.jpg', dpi=300)
     plt.show()
 
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
