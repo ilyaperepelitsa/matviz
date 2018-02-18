@@ -16,6 +16,8 @@ from random import shuffle
 palette = ["#54637a", "#54787a","#547a63", "#6b7a54", "#918e5f",
             "#b29563", "#bf8765", "#bf7265","#aa4747", "#824a53",
             "#824a6b", "#603f63", "#4e3f63"]
+
+    
 palette
 shuffle(palette)
 palette
@@ -197,9 +199,9 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         invert_value = 1
 
     matplotlib.rc('axes', edgecolor=keycolor)
-    # palette = ["#54637a", "#54787a","#547a63", "#6b7a54", "#918e5f",
-    #             "#b29563", "#bf8765", "#bf7265","#aa4747", "#824a53",
-    #             "#824a6b", "#603f63", "#4e3f63"]
+    palette = ["#54637a", "#54787a","#547a63", "#6b7a54", "#918e5f",
+                "#b29563", "#bf8765", "#bf7265","#aa4747", "#824a53",
+                "#824a6b", "#603f63", "#4e3f63"]
     shuffle(palette)
     plt.rc("axes", prop_cycle = (cycler("color", palette)))
     boxes = plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
