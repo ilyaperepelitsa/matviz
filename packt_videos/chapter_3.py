@@ -9,6 +9,7 @@ import matplotlib
 from scipy import stats
 
 from itertools import cycle
+from cycler import cycler
 from collections import defaultdict
 
 
