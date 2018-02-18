@@ -196,7 +196,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         invert_value = 1
 
     matplotlib.rc('axes', edgecolor=keycolor)
-    plt.rc("axes", prop_cycle = (cycler("color", ["#54637a", "#54787a",
+    plt.rc("axes", prop_cycle = (cycler("color", shuffle["#54637a", "#54787a",
                                         "#547a63", "#6b7a54", "#918e5f",
                                         "#b29563", "#bf8765", "#bf7265",
                                         "#aa4747", "#824a53", "#824a6b",
