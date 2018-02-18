@@ -266,7 +266,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     #                 # boxprops = {'color': keycolor, 'facecolor': keycolor, 'zorder' : 999}
     #                 )
 
-    plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
+    plt.boxplot([data_data[1] for data_data in data_sorted], labels=labels, 0, outlier_mark, invert_value,
                 patch_artist = True,
                 whiskerprops = {'color': "#8999b2", 'linewidth' : 9.5, 'zorder' : 0},
                 medianprops = {'color': "#ffffff", 'linewidth' : 3, 'zorder' : 1000},
