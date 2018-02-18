@@ -13,10 +13,7 @@ from cycler import cycler
 from collections import defaultdict
 from random import shuffle
 
-palette = [['#aa4747','#bf7265','#b29563',
- '#54637a',
- '#603f63',
- '#824a53',
+palette = [['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53',
  '#54787a',
  '#918e5f',
  '#bf8765',
