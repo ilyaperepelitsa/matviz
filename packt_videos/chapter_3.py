@@ -19,7 +19,8 @@ palette = ["#54637a", "#54787a","#547a63", "#6b7a54", "#918e5f",
 
 palette2 = shuffle(palette)
 
-for i in palette
+for i in palette2:
+    print(i)
 # plt.rcParams["axes.prop_cycle"]
 # plt.rc("axes", prop_cycle = (cycler("color", ["#54637a", "#54787a",
 #                                     "#547a63", "#6b7a54", "#918e5f",
