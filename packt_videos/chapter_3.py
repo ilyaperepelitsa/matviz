@@ -13,16 +13,26 @@ from cycler import cycler
 from collections import defaultdict
 from random import shuffle
 
-palette = ["#54637a", "#54787a","#547a63", "#6b7a54", "#918e5f",
-            "#b29563", "#bf8765", "#bf7265","#aa4747", "#824a53",
-            "#824a6b", "#603f63", "#4e3f63"]
+palette = [['#aa4747',
+ '#bf7265',
+ '#b29563',
+ '#54637a',
+ '#603f63',
+ '#824a53',
+ '#54787a',
+ '#918e5f',
+ '#bf8765',
+ '#4e3f63',
+ '#824a6b',
+ '#547a63',
+ '#6b7a54']]
 
 palette = ["#c19c9e", "#c19cac","#c19cbc", "#b29cc1", "#9c9dc1",
             "#9cb0c1", "#9cc1bd", "#9cc1a2","#bcc19c", "#c1b19c",
             "#c1a09c"]
 palette
 shuffle(palette)
-# palette
+palette
 # palette2
 # for i in palette:
 #     print(i)
