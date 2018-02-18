@@ -183,7 +183,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     plot_cols = dict()
     for patch in boxes["boxes"]:
-        patch.set)fa
+        patch.set_face
          # plot_cols[data_data[0]] = cmap(data_data[0])[1]
          print(cmap())
 
