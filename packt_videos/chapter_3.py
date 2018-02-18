@@ -19,6 +19,8 @@ color_cycler = plt.rc("axes",
                                     "#aa4747", "#824a53", "#824a6b",
                                     "#603f63", "#4e3f63"])))
 
+plt.rc('axes', prop_cycle=(cycler('color', ['r', 'g', 'b', 'y']) +
+                           cycler('linestyle', ['-', '--', ':', '-.'])))
 # color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 # cmap = lambda x: [x, next(color_cycler)["color"]]
 cmap = lambda: next(color_cycler)["color"]
