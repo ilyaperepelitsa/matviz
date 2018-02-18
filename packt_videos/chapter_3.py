@@ -20,7 +20,7 @@ palette
 shuffle(palette)
 palette
 palette2
-for i in palette2:
+for i in palette:
     print(i)
 # plt.rcParams["axes.prop_cycle"]
 # plt.rc("axes", prop_cycle = (cycler("color", ["#54637a", "#54787a",
