@@ -11,6 +11,8 @@ from scipy import stats
 from itertools import cycle
 from cycler import cycler
 from collections import defaultdict
+from random import shuffle
+
 
 # plt.rcParams["axes.prop_cycle"]
 plt.rc("axes", prop_cycle = (cycler("color", ["#54637a", "#54787a",
