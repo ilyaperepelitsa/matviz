@@ -202,9 +202,9 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a',
                 '#918e5f','#bf8765','#4e3f63','#824a6b','#547a63','#6b7a54']
 
-    palette = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
+    palette2 = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
                 '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
-    shuffle(palette)
+
     plt.rc("axes", prop_cycle = (cycler("color", palette)))
     boxes = plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
                 patch_artist = True,
