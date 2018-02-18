@@ -10,7 +10,3 @@
 
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 cmap = lambda x: [x, next(color_cycler)["color"]]
-
-
-from itertools import cycle
-from collections import defaultdict
