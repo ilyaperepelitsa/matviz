@@ -114,7 +114,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             subtitle = "Don't forget your subtitles.",
                             xlabel = "Label X axis",
                             ylabel = "Label Y axis"):
-            
+
+    color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
     color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
     # cmap = lambda x: [x, next(color_cycler)["color"]]
     cmap = lambda: next(color_cycler)["color"]
