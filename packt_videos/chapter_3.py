@@ -116,7 +116,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             ylabel = "Label Y axis"):
 
 
-
+        
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
     if isinstance(int(get_top), int):
         group_labels = labels_to_filter[0:int(get_top)]
@@ -182,7 +182,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     plot_cols = dict()
     for data_data in data_sorted:
          plot_cols[data_data[0]] = cmap(data_data[0])[1]
-         
+
     print(pew["boxes"])
 
     names = [data_data[0] for data_data in data_sorted]
