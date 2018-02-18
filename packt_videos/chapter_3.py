@@ -16,19 +16,12 @@ cmap = lambda x: {x, next(color_cycler)["color"]}
 
 pew = []
 for i in range(1, 5):
-    plot_cols.update = cmap(str(i))[str(i)]
-    # print(color)
+    color = cmap("pew")
+    print(color)
 
 for i in range(1, 5):
     color = cmap()
     print(color)
-
-plot_cols = dict()
-for data_data in data_sorted:
-     # for data_data in data_sorted
-     # print(data_data[0])
-     plot_cols[data_data[0]] = cmap(data_data[0])[data_data[0]]
-
 
 pew = "random"
 # first_set = pd.read_csv("~/quant/fastest_routes_train_part_1.csv")
@@ -241,11 +234,10 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 
     matplotlib.rc('axes', edgecolor=keycolor)
 
-    plot_cols = dict()
+    plot_cols = []
     for data_data in data_sorted:
          # for data_data in data_sorted
-         # print(data_data[0])
-         plot_cols[data_data[0]] = cmap(data_data[0])[data_data[0]]
+        plot_cols.append(cmap(data_data[0]))
         # print(color)
 
 
@@ -257,7 +249,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                     # capprops = {'color': keycolor, 'linewidth' : 4},
                     showcaps=False,
 
-                    boxprops = {'color': keycolor, 'facecolor': plot_cols[data_data[0]], 'zorder' : 999}
+                    boxprops = {'color': keycolor, 'facecolor': '#5e5757', 'zorder' : 999}
                     # boxprops = {'color': keycolor, 'facecolor': keycolor, 'zorder' : 999}
                     )
 
@@ -310,8 +302,8 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
 plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
-                    get_top = 3,
-                    subtitle = "3 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    get_top = 20,
+                    subtitle = "20 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
