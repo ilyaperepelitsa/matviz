@@ -12,7 +12,7 @@ from itertools import cycle
 from cycler import cycler
 from collections import defaultdict
 
-
+plt.rcParams["axes.prop_cycle"]
 #
 # plt.rc('axes', prop_cycle=(cycler('color', ['r', 'g', 'b', 'y']) +
 #                            cycler('linestyle', ['-', '--', ':', '-.'])))
