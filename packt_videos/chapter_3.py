@@ -118,7 +118,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     color_cycler = cycle(plt.rc("axes",
                             prop_cycle = (cycler("color", ["#54637a", "#54787a",
                                         "#547a63", "#6b7a54", "#918e5f",
-                                        "#b29563", "", "", ""]))))
+                                        "#b29563", "#bf8765", "", ""]))))
 
     # color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
     # cmap = lambda x: [x, next(color_cycler)["color"]]
