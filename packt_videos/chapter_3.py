@@ -307,4 +307,5 @@ sample_1k.shape
 sample_1k.head()
 plt.figure(figsize = (13, 5))
 one, two, three = [], [], []
-for i in iterrows
+for i in iterrows(sample_1k):
+    print
