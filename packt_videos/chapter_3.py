@@ -292,7 +292,6 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     get_top = 30)
 
 
-trip_ids = total_exploded["id"].unique()
 sample_trips = np.random.choice(trip_ids, 500000)
 
 
