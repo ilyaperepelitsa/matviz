@@ -18,6 +18,8 @@ palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a'
 
 palette = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
             '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
+
+            
 palette
 shuffle(palette)
 palette
@@ -265,7 +267,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     data_group = "starting_street", invert_axes = True,
                     order = "desc", order_by = "iqr", show_outliers = False,
                     get_top = 10,
-                    subtitle = "20 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
+                    subtitle = "10 Most frequent Starting streets for 30k taxi trips. Time per maneuver.",
                     ylabel = "Trip starting street",
                     xlabel = "Travel time per maneuver")
 
