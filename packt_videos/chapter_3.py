@@ -304,4 +304,4 @@ sample_1k.shape
 
 
 
-sample_1k.
+sample_1k.head()
