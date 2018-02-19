@@ -291,7 +291,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     order = "desc", order_by = "iqr", show_outliers = False,
                     get_top = 30)
 
-total_exploded
+total_exploded.info()
 
 sample_trips = np.random.choice(total_exploded["id"].unique(), 5)
 
