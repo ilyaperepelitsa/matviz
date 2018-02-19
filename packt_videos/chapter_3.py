@@ -305,3 +305,4 @@ sample_1k.shape
 
 
 sample_1k.head()
+plt.figure(figsize = (canvas_width, canvas_height))
