@@ -24,7 +24,7 @@ plt.rc("axes", prop_cycle = (cycler("color", palette_pastel)))
 
 
 
-cmap_dict = lambda x : [x , next(color_cycler)["color"]]
+cmap_dict = lambda x : [x , next(color_cycler)["color"]
 cmap_dict("pew")
 palette
 shuffle(palette)
