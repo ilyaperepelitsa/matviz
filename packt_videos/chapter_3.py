@@ -294,7 +294,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
 total_exploded.info()
 
 
-##
+##### DOTP
 
 
 sample_trips = np.random.choice(total_exploded["starting_street"].unique(), 10)
