@@ -295,7 +295,7 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
 sample_trips = np.random.choice(trip_ids, 1000)
 
 
-sample_30k = total_exploded.loc[total_exploded["id"].isin(sample_trips), :]
+sample_1k = total_exploded.loc[total_exploded["id"].isin(sample_trips), :]
 # sample_30k.head()
 
 sample_30k["starting_street"].unique().shape
