@@ -296,7 +296,7 @@ total_exploded.info()
 sample_trips = np.random.choice(total_exploded["starting_street"].unique(), 10)
 
 
-sample_1k = total_exploded.loc[total_exploded["id"].isin(sample_trips), :]
+sample_1k = total_exploded.loc[total_exploded["starting_street"].isin(sample_trips), :]
 # sample_30k.head()
 
 sample_1k["starting_street"].unique().shape
