@@ -292,17 +292,11 @@ plot_boxplots_groups(data_in = sample_30k, data_num = "travel_time_per_step",
                     get_top = 30)
 
 
-
-sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False).index.shape[0]
-dir(pd.Series)
-sample_30k.groupby(["starting_street"]).size().sort_values(ascending = False)
-# .reset_index(name='counts')
-
-sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-        ["travel_time_per_step"]].sort_values(by = ["travel_time_per_step"],ascending = False).quantile(.1)
+trip_ids = total_exploded["id"].unique()
+sample_trips = np.random.choice(trip_ids, 500000)
 
 
+sample_30k = total_exploded.loc[total_exploded["id"].isin(sample_trips), :]
+# sample_30k.head()
 
-(sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-        ["travel_time_per_step"]].quantile(.75) - sample_30k.loc[sample_30k["starting_street"].isin(["Broadway"]),
-                ["travel_time_per_step"]].quantile(.25))
+sample_30k["starting_street"].unique().shape
