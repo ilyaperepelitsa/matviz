@@ -21,7 +21,7 @@ palette_pastel = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#
 
 pew = plt.rc("axes", prop_cycle = (cycler("color", palette_pastel)))
 
-cmap = lambda: next(color_cycler)["color"]
+cmap = lambda: next(pew)["color"]
 cmap()
 
 cmap_dict = lambda x : {x , next(color_cycler)["color"]}
