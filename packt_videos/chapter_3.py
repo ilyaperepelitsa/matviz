@@ -335,9 +335,9 @@ plt.rc("axes", prop_cycle = (cycler("color", ["#547a63", "#4e3f63", "#aa4747"]))
 plt.rcParams['axes.facecolor'] = '#252628'
 for street in sample_1k["starting_street"].unique():
     labels.append(cmap(street))
-    # plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, "lon"],
-    #             sample_1k.loc[sample_1k["starting_street"] == street, "lat"],
-    #             c = cmap(street)[street],alpha = 0.5, edgecolor = "none", linewidth = 0.5)
+    plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, "lon"],
+                sample_1k.loc[sample_1k["starting_street"] == street, "lat"],
+                c = cmap(street)[street],alpha = 0.5, edgecolor = "none", linewidth = 0.5)
 # pew
 legend_handlers = [plt.scatter([], [], marker = "o", label = label_entry[])]
 
