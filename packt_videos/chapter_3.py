@@ -326,7 +326,7 @@ palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a'
 
 
 # cmap = lambda: next(color_cycler)["color"]
-cmap = lambda x: [x: next(color_cycler)["color"]]
+cmap = lambda x: [x, next(color_cycler)["color"]]
 
 
 labels = []
