@@ -295,7 +295,7 @@ total_exploded.info()
 
 
 ##### DOTPLOT
-sample_trips = np.random.choice(total_exploded["starting_street"].unique(), 10)
+sample_trips = np.random.choice(total_exploded["starting_street"].unique(), 3)
 sample_1k = total_exploded.loc[total_exploded["starting_street"].isin(sample_trips), :]
 
 
