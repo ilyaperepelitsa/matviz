@@ -31,8 +31,10 @@ labels = []
 
 
 plt.figure(figsize = (10, 10))
-plt.rc("axes", prop_cycle = (cycler("color", ["#547a63", "#4e3f63", "#aa4747"])))
-plt.rcParams['axes.facecolor'] = '#252628'
+
+
+
+
 for street in sample_1k["starting_street"].unique():
     labels.append(cmap(street))
 
