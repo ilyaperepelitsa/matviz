@@ -311,7 +311,7 @@ sample_1k.shape
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 # # cmap = lambda x: [x, next(color_cycler)["color"]]
 cmap = lambda: next(color_cycler)["color"]
-cmap = lambda x: dict(x, next(color_cycler)["color"])
+cmap = lambda x: {}x, next(color_cycler)["color"])
 # plot_cols = dict()
 # for patch in boxes["boxes"]:
 #     patch.set_facecolor(cmap())
