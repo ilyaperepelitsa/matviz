@@ -308,9 +308,14 @@ sample_1k.head()
 plt.figure(figsize = (13, 5))
 one, two, three = [], [], []
 
+color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
+# # cmap = lambda x: [x, next(color_cycler)["color"]]
+cmap = lambda: next(color_cycler)["color"]
+
+
 for street in sample_1k["starting_street"].unique():
     sample_1k.loc[sample_1k["starting_street"] == street, lat]
-    sample_1k.loc[sample_1k["starting_street"] == street, lat]
+    sample_1k.loc[sample_1k["starting_street"] == street, lon]
     # print(street)
 
 for i, r in sample_1k.iterrows():
