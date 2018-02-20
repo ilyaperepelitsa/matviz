@@ -25,7 +25,6 @@ plt.rc("axes", prop_cycle = (cycler("color", palette)))
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 cmap = lambda x: [x, next(color_cycler)["color"]]
 
-labels
 labels = []
 plt.figure(figsize = (10, 10))
 plt.rc("axes", prop_cycle = (cycler("color", ["#547a63", "#4e3f63", "#aa4747"])))
