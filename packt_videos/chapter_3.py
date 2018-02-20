@@ -307,5 +307,5 @@ sample_1k.shape
 sample_1k.head()
 plt.figure(figsize = (13, 5))
 one, two, three = [], [], []
-for i in sample_1k.iterrows():
-    print(i)
+for i, r in sample_1k.iterrows():
+    print(i["end_street"])
