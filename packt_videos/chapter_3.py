@@ -350,4 +350,4 @@ plt.show()
 labels
 
 for i in labels:
-    
+    plt.hist()
