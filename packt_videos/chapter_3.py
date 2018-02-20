@@ -331,7 +331,7 @@ plt.rcParams['axes.facecolor'] = '#252628'
 for street in sample_1k["starting_street"].unique():
     plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, "lon"],
                 sample_1k.loc[sample_1k["starting_street"] == street, "lat"],
-                edgecolor alpha = 0.5, c = "none", linewidth = 0.5)
+                edgecolor = cmap(),alpha = 0.5, c = "none", linewidth = 0.5)
 
 plt.axes().set_aspect("equal")
 plt.show()
