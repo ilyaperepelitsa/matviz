@@ -309,7 +309,7 @@ plt.figure(figsize = (13, 5))
 one, two, three = [], [], []
 
 for street in sample_1k["starting_street"].unique():
-    sample_1k.loc[sample_1k["starting_street"] == "street",""]
+    sample_1k.loc[sample_1k["starting_street"] == "street","lat"].s
     print(street)
 
 for i, r in sample_1k.iterrows():
