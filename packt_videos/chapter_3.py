@@ -345,4 +345,3 @@ plt.axes().set_aspect("equal")
 plt.show()
 
 labels[0]
-    # print(street)
