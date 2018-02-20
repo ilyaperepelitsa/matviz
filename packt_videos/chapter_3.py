@@ -313,14 +313,20 @@ color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 cmap = lambda: next(color_cycler)["color"]
 cmap = lambda: next(color_cycler)["color"]
 # plot_cols = dict()
-for patch in boxes["boxes"]:
-    patch.set_facecolor(cmap())
+# for patch in boxes["boxes"]:
+#     patch.set_facecolor(cmap())
 
+
+palette23 = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
+            '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
+
+plt.figure(figsize = (canvas_width, canvas_height))
+plt.rc("axes", prop_cycle = (cycler("color", palette23)))
 
 for street in sample_1k["starting_street"].unique():
     plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, lat],
                 sample_1k.loc[sample_1k["starting_street"] == street, lon],
-                )
+                edgecolors = cmap())
 
 
     # print(street)
