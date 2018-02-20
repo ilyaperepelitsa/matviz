@@ -326,7 +326,7 @@ plt.rc("axes", prop_cycle = (cycler("color", palette23)))
 for street in sample_1k["starting_street"].unique():
     plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, "lon"],
                 sample_1k.loc[sample_1k["starting_street"] == street, "lat"],
-                edgecolors = cmap())
+                colors = cmap())
 
 plt.axes().set_aspect("equal")
 plt.show()
