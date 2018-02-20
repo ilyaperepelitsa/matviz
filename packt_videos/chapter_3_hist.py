@@ -20,7 +20,6 @@ palette_pastel = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#
             '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
 
 plt.rc("axes", prop_cycle = (cycler("color", palette)))
-# pew = plt.rc("axes", prop_cycle = (cycler("color", palette_pastel)))
 
 
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
