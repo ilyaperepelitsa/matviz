@@ -32,7 +32,7 @@ cmap = lambda x: [x, next(color_cycler)["color"]]
 
 
 #####################
-# STYLE DEFINITIONS
+# LOADING DATA
 #####################
 
 
