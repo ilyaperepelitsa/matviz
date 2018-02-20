@@ -327,7 +327,7 @@ palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a'
 cmap = lambda: next(color_cycler)["color"]
 plt.figure(figsize = (10, 10))
 plt.rc("axes", prop_cycle = (cycler("color", ["#547a63", "#4e3f63", "#aa4747"])))
-plt.rcParams['axes.facecolor'] = ''
+plt.rcParams['axes.facecolor'] = '#252628'
 for street in sample_1k["starting_street"].unique():
     plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, "lon"],
                 sample_1k.loc[sample_1k["starting_street"] == street, "lat"],
