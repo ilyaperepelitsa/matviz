@@ -345,4 +345,4 @@ plt.axes().set_aspect("equal")
 plt.show()
 
 for i in labels:
-    print(i.keys()[9])
+    print(i.keys())
