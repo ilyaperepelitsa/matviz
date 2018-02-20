@@ -351,5 +351,5 @@ labels
 
 for i in labels:
     plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], color = street[1], histtype = "barstacked", bins = 20)
-
+    
 plt.show()
