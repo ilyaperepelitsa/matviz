@@ -351,10 +351,10 @@ plt.show()
 labels = []
 sample_trips = np.random.choice(total_exploded["starting_street"].unique(), 3)
 sample_1k = total_exploded.loc[total_exploded["starting_street"].isin(sample_trips), :]
-labels
+
 for street in sample_1k["starting_street"].unique():
     labels.append(cmap(street))
-
+labels
 
 for i in labels:
     plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], color = street[1], histtype = "barstacked", bins = 20)
