@@ -310,7 +310,7 @@ one, two, three = [], [], []
 
 for street in sample_1k["starting_street"].unique():
     sample_1k.loc[sample_1k["starting_street"] == street, lat]
-
+    sample_1k.loc[sample_1k["starting_street"] == street, lat]
     # print(street)
 
 for i, r in sample_1k.iterrows():
