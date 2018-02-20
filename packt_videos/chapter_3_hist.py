@@ -23,7 +23,6 @@ plt.rc("axes", prop_cycle = (cycler("color", palette)))
 
 
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-
 cmap = lambda x: [x, next(color_cycler)["color"]]
 
 labels
