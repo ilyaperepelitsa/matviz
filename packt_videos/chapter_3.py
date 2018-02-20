@@ -350,4 +350,4 @@ plt.show()
 labels
 
 for i in labels:
-    plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], colors = street[1], histtype = )
+    plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], colors = street[1], histtype = "barstt")
