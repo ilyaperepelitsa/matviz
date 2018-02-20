@@ -347,4 +347,4 @@ plt.show()
 labels
 
 for i in labels:
-    print(i.items())
+    print(i.keys())
