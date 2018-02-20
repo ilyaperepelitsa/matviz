@@ -337,8 +337,3 @@ plt.axes().set_aspect("equal")
 plt.show()
 
     # print(street)
-
-for i, r in sample_1k.iterrows():
-    one.append(r["lat"])
-    two.append(r["lon"])
-    print(r["end_street"])
