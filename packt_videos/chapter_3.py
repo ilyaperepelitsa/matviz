@@ -344,4 +344,4 @@ legend_handlers = [plt.scatter([], [], marker = "o", label = label_entry[])]
 plt.axes().set_aspect("equal")
 plt.show()
 
-for klabels[0].items()
+labels[0].items()
