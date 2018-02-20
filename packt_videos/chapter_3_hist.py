@@ -35,7 +35,7 @@ cmap = lambda x: [x, next(color_cycler)["color"]]
 # LOADING DATA
 #####################
 
-elec_2013 = pd.read_csv("~/Downloads/israeli-elections-")
+elec_2013 = pd.read_csv("~/Downloads/israeli-elections-2015/results_by_booth_2013 - english - v2.csv")
 
 
 labels = []
