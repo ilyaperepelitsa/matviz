@@ -301,11 +301,11 @@ sample_1k = total_exploded.loc[total_exploded["starting_street"].isin(sample_tri
 
 sample_1k["starting_street"].unique().shape
 sample_1k.shape
-
+sample_1k
 
 
 sample_1k.head()
 plt.figure(figsize = (13, 5))
 one, two, three = [], [], []
-for i in iterrows(sample_1k):
+for i in sample_1k.iterrows():
     print(i['id'])
