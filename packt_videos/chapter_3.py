@@ -340,7 +340,8 @@ for street in labels:
                 sample_1k.loc[sample_1k["starting_street"] == street[0], "lat"],
                 c = street[1],alpha = 0.5, edgecolor = "none", linewidth = 0.5)
 # pew
-legend_handlers = [plt.scatter([], [], marker = "o", label = label_entry[0])]
+legend_handlers = [plt.scatter([], [], marker = "o", label = label_entry[0],
+                    )]
 
 plt.axes().set_aspect("equal")
 plt.show()
