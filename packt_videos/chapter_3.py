@@ -326,7 +326,7 @@ palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a'
 
 
 plt.figure(figsize = (10, 10))
-plt.rc("axes", prop_cycle = (cycler("color", palette)))
+plt.rc("axes", prop_cycle = (cycler("color", )))
 
 for street in sample_1k["starting_street"].unique():
     plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street, "lon"],
