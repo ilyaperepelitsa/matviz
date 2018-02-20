@@ -308,4 +308,4 @@ sample_1k.head()
 plt.figure(figsize = (13, 5))
 one, two, three = [], [], []
 for i in sample_1k.iterrows():
-    print(i['id'])
+    print(i.loc['id'])
