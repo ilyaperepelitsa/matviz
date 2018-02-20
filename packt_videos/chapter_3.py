@@ -343,7 +343,7 @@ for street in labels:
 legend_handlers = [plt.scatter([], [], marker = "o", label = label_entry[0],
                     edgecolors = label_entry[1], c = 'none') for label_entry in labels]
 
-plt.legend(handlers = legend_handlers, scatterpoints = 1, ncol = 3, loc = 'upper center')
+plt.legend(handles = legend_handlers, scatterpoints = 1, ncol = 3, loc = 'upper center')
 plt.axes().set_aspect("equal")
 plt.show()
 
