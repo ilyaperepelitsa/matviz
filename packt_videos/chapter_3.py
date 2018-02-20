@@ -341,7 +341,7 @@ for street in labels:
                 c = street[1], alpha = 0.5, edgecolor = "none", linewidth = 0.5)
 # pew
 legend_handlers = [plt.scatter([], [], marker = "o", label = label_entry[0],
-                    edgecolors = label_entry[1], c = 'none') for ]
+                    edgecolors = label_entry[1], c = 'none') for label_entry]
 
 plt.axes().set_aspect("equal")
 plt.show()
