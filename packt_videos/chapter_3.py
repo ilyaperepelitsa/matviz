@@ -357,7 +357,7 @@ for street in sample_1k["starting_street"].unique():
 labels
 
 for i in labels:
-    plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], color = street[1], histtype = "barstacked", bins = 20)
+    plt.hist(sample_1k.loc[sample_1k["starting_street"] == i[0], "lon"], color = i[1], histtype = "barstacked", bins = 20)
     # print(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"].shape)
     print(i)
 plt.show()
