@@ -335,6 +335,7 @@ plt.rc("axes", prop_cycle = (cycler("color", ["#547a63", "#4e3f63", "#aa4747"]))
 plt.rcParams['axes.facecolor'] = '#252628'
 for street in sample_1k["starting_street"].unique():
     labels.append(cmap(street))
+    
 for street in labels:
     plt.scatter(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"],
                 sample_1k.loc[sample_1k["starting_street"] == street[0], "lat"],
@@ -351,5 +352,5 @@ labels
 
 for i in labels:
     plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], color = street[1], histtype = "barstacked", bins = 20)
-    print(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"].s)
+    print(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"].shape)
 plt.show()
