@@ -311,7 +311,11 @@ one, two, three = [], [], []
 color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
 # # cmap = lambda x: [x, next(color_cycler)["color"]]
 cmap = lambda: next(color_cycler)["color"]
-
+cmap = lambda: next(color_cycler)["color"]
+# plot_cols = dict()
+for patch in boxes["boxes"]:
+    patch.set_facecolor(cmap())
+    
 
 for street in sample_1k["starting_street"].unique():
     sample_1k.loc[sample_1k["starting_street"] == street, lat]
