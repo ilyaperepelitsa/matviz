@@ -348,10 +348,10 @@ plt.legend(handles = legend_handlers, scatterpoints = 1, ncol = 3, loc = 'upper 
 plt.axes().set_aspect("equal")
 plt.show()
 
-labels
+
 sample_trips = np.random.choice(total_exploded["starting_street"].unique(), 3)
 sample_1k = total_exploded.loc[total_exploded["starting_street"].isin(sample_trips), :]
-
+labels
 
 for i in labels:
     plt.hist(sample_1k.loc[sample_1k["starting_street"] == street[0], "lon"], color = street[1], histtype = "barstacked", bins = 20)
