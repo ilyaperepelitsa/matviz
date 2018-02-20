@@ -329,7 +329,7 @@ palette = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a'
 cmap = lambda x: {x: next(color_cycler)["color"]}
 
 
-labels = []
+labels = ()
 plt.figure(figsize = (10, 10))
 plt.rc("axes", prop_cycle = (cycler("color", ["#547a63", "#4e3f63", "#aa4747"])))
 plt.rcParams['axes.facecolor'] = '#252628'
