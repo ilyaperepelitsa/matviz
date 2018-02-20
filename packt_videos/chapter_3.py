@@ -301,7 +301,7 @@ sample_1k = total_exploded.loc[total_exploded["starting_street"].isin(sample_tri
 
 sample_1k["starting_street"].unique().shape
 sample_1k.shape
-sample_1k
+
 
 
 sample_1k.head()
