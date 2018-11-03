@@ -14,4 +14,5 @@ import matplotlib.pyplot as plt
 # plt._pylab_helpers.Gcf.get_active().canvas
 plt.gcf()
 plt.gca()
-plt.gca()
+plt.gca().lines
+plt.gca().get_ylabel()
