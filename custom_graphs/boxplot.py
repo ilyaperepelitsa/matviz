@@ -1,4 +1,16 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
 
+from matplotlib.backends.backend_agg import FigureCanvasAgg
+from matplotlib.figure import Figure
+import matplotlib
+from scipy import stats
+
+from itertools import cycle
+from cycler import cycler
+from collections import defaultdict
+from random import shuffle
 
 
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
