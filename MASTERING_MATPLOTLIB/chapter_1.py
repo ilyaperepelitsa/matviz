@@ -8,3 +8,4 @@ from modulefinder import Module
 from modulefinder import ModuleFinder
 from os.path import dirname
 from pprint import pprint
+import sys
