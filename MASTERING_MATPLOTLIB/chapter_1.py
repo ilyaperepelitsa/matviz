@@ -18,4 +18,6 @@ from IPython.core.display import Image
 from pycallgraph import Config
 from pycallgraph import GlobbingFilter
 from pycallgraph import PyCallGraph
-from pycallgraph.output import Graphv
+from pycallgraph.output import GraphvizOutput
+
+sys.path.append("../lib")
