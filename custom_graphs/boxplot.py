@@ -19,6 +19,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
                             show_outliers = True, get_top = False,
                             keycolor = "#232626",
+                            palette 
                             # title = "Don't forget your titles.",
                             subtitle = "Don't forget your subtitles.",
                             xlabel = "Label X axis",
