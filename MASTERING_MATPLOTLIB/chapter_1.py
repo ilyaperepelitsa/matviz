@@ -9,3 +9,5 @@ from modulefinder import ModuleFinder
 from os.path import dirname
 from pprint import pprint
 import sys
+import trace
+import url
