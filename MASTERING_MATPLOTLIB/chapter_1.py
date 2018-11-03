@@ -25,3 +25,7 @@ sys.path.append("../lib")
 # import modfind
 # import modgraph
 # from modutil import ls, rm
+
+toplevel = glob(libdir + "/*.py")
+        modules = ["matplotlib" + x.split(libdir)[1]
+                   for x in toplevel]
