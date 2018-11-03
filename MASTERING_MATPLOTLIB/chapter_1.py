@@ -1,2 +1,2 @@
 import matplotlib
-matplotlib.us
+matplotlib.use("nbagg")
