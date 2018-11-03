@@ -17,3 +17,4 @@ plt.gca()
 plt.gca().lines
 plt.gca().get_ylabel()
 plt.ylabel('some numbers')
+plt.gca().get_ylabel()
