@@ -21,8 +21,8 @@ plt.gca().get_ylabel()
 
 
 def plotit():
-             plt.plot([1,2,3,4])
-             plt.ylabel('some numbers')
-             plt.show()
-         tracer = trace.Trace(countfuncs=1, countcallers=1)
-         _ = tracer.runfunc(plotit)
+plt.plot([1,2,3,4])
+plt.ylabel('some numbers')
+plt.show()
+tracer = trace.Trace(countfuncs=1, countcallers=1)
+_ = tracer.runfunc(plotit)
