@@ -4,4 +4,5 @@ matplotlib.use("nbagg")
 
 
 from glob import glob
-from modulefinder import 
+from modulefinder import Module
+from modulefinder import Module
