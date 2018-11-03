@@ -76,7 +76,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                 patch_artist = True,
                 whiskerprops = {'color': "#9ea5a8", 'linewidth' : 9.5, 'zorder' : 0},
                 medianprops = {'color': "#ffffff", 'linewidth' : 3, 'zorder' : 1000},
-                # capprops = {'color': keycolor, 'linewidth' : 4},
                 showcaps=False,
 
                 boxprops = {'color': keycolor, 'facecolor': "#5e5757", 'zorder' : 999}
