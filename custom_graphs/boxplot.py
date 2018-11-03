@@ -83,7 +83,7 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
     palette23 = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
                 '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
 
-    plt.rc("axes", prop_cycle = (cycler("color", palette23)))
+    plt.rc("axes", prop_cycle = (cycler("color", graph_palette)))
     boxes = plt.boxplot([data_data[1] for data_data in data_sorted], 0, outlier_mark, invert_value,
                 patch_artist = True,
                 whiskerprops = {'color': "#9ea5a8", 'linewidth' : 9.5, 'zorder' : 0},
