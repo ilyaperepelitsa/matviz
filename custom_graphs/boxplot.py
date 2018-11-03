@@ -12,7 +12,7 @@ from cycler import cycler
 from collections import defaultdict
 from random import shuffle
 
-from custom_graphs.pal
+from custom_graphs.
 
 
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
