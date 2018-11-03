@@ -16,3 +16,5 @@ import matplotlib.pyplot as plt
 from IPython.core.display import Image
 
 from pycallgraph import Config
+from pycallgraph import Config
+from pycallgraph import Configfrom pycallgraph import Config
