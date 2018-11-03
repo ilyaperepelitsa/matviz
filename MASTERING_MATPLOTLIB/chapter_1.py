@@ -26,7 +26,7 @@ sys.path.append("../lib")
 # import modgraph
 # from modutil import ls, rm
 
-libdir = "../.venv/lib/python3.6/site-packages/matplotlib"
+libdir = "./lib/python3.6/site-packages/matplotlib"
 toplevel = glob(libdir + "/*.py")
 modules = ["matplotlib" + x.split(libdir)[1]
            for x in toplevel]
