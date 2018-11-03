@@ -11,3 +11,4 @@ plt.get_current_fig_manager()
 plt.get_current_fig_manager().figure
 plt.plot([1,2,3,4])
 plt._pylab_helpers.Gcf.get_active()
+plt._pylab_helpers.Gcf.get_active().canvas
