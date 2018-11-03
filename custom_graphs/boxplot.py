@@ -11,7 +11,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             ylabel = "Label Y axis"):
 
     color_cycler = cycle(plt.rcParams["axes.prop_cycle"])
-    # # cmap = lambda x: [x, next(color_cycler)["color"]]
     cmap = lambda: next(color_cycler)["color"]
 
     labels_to_filter = data_in.groupby([data_group]).size().sort_values(ascending = False).index
@@ -65,8 +64,6 @@ def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
         invert_value = 1
 
     matplotlib.rc('axes', edgecolor=keycolor)
-    # palette23 = ['#aa4747','#bf7265','#b29563','#54637a','#603f63','#824a53','#54787a',
-    #             '#918e5f','#bf8765','#4e3f63','#824a6b','#547a63','#6b7a54']
 
     palette23 = ['#bcc19c','#c19c9e','#c19cbc','#c1a09c','#c19cac','#9c9dc1','#9cb0c1',
                 '#c1b19c','#b29cc1','#9cc1bd','#9cc1a2']
