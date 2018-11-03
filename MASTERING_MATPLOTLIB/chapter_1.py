@@ -7,3 +7,4 @@ plt._show
 plt._pylab_helpers.Gcf
 matplotlib._pylab_helpers.Gcf
 plt._pylab_helpers.Gcf.get_active()
+plt.get_current_fig_manager()
