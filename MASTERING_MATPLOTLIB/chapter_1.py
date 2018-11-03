@@ -17,6 +17,3 @@ colors = sns.color_palette(pallete_name, 8)
 colors.reverse()
 cmap = mpl.colors.LinearSegmentedColormap.from_list(
     pallete_name, colors)
-
-
-colors
