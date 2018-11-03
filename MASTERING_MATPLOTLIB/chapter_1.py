@@ -5,3 +5,4 @@ plt._show
 
 
 plt._pylab_helpers.Gcf
+matplotlib._pylab_helpers.Gcf
