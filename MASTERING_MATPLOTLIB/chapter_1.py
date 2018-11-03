@@ -17,5 +17,4 @@ from IPython.core.display import Image
 
 from pycallgraph import Config
 from pycallgraph import GlobbingFilter
-from pycallgraph import PyCall
-from pycallgraph import Config
+from pycallgraph import PyCallGraph
