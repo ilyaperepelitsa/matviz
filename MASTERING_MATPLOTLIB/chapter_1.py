@@ -12,3 +12,5 @@ import matplotlib.pyplot as plt
 # plt.plot([1,2,3,4])
 # plt._pylab_helpers.Gcf.get_active()
 # plt._pylab_helpers.Gcf.get_active().canvas
+plt.gcf()
+plt.gca
