@@ -18,4 +18,4 @@ from IPython.core.display import Image
 from pycallgraph import Config
 from pycallgraph import GlobbingFilter
 from pycallgraph import PyCallGraph
-from pycallgraph. import Config
+from pycallgraph.output import Config
