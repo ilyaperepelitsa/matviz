@@ -21,3 +21,7 @@ from pycallgraph import PyCallGraph
 from pycallgraph.output import GraphvizOutput
 
 sys.path.append("../lib")
+from modarch import matplotlib_groupings
+import modfind
+import modgraph
+from modutil import ls, rm
