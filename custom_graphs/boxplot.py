@@ -14,7 +14,6 @@ from random import shuffle
 
 from custom_graphs.palette import *
 
-palett
 
 def plot_boxplots_groups(data_in, data_num, data_group, invert_axes = False,
                             order = "desc", order_by = "median",
