@@ -13,4 +13,4 @@ import trace
 import urllib.request
 
 import matplotlib.pyplot as plt
-from Ipython.core
+from IPython.core.display import Image
